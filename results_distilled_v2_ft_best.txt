@@ -1,0 +1,33 @@
+Distilled v2 Fine-tuned Best (Epoch 135) — Full Evaluation
+Fine-tuned on RHD | 50 Epochs | Best PCK@0.2: 0.7683
+Dataset: RHD test split (2727 samples)
+
+PCK@0.2:    0.7467
+MPJPE:      37.0381 px
+MSE:        3084.5732 px2
+AUC:        0.7224
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.8031      33.6316
+Thumb_MCP           0.6810      44.4578
+Thumb_PIP           0.7382      35.4729
+Thumb_DIP           0.7569      34.0052
+Thumb_Tip           0.8034      31.9307
+Index_MCP           0.6630      47.5318
+Index_PIP           0.7499      36.1850
+Index_DIP           0.7620      34.7703
+Index_Tip           0.7532      35.3565
+Middle_MCP          0.7165      41.0957
+Middle_PIP          0.7833      34.2870
+Middle_DIP          0.7950      31.8100
+Middle_Tip          0.7778      32.5316
+Ring_MCP            0.6942      43.1383
+Ring_PIP            0.7866      33.3624
+Ring_DIP            0.7866      32.0221
+Ring_Tip            0.8049      31.2509
+Pinky_MCP           0.6678      46.5254
+Pinky_PIP           0.7055      41.3003
+Pinky_DIP           0.7253      39.0049
+Pinky_Tip           0.7272      38.1291

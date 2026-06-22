@@ -1,0 +1,32 @@
+Official MediaPipe SDK Evaluation (vs Ground Truth)
+Model: Full (model_complexity=1, 1.98M params)
+Dataset: RHD test (500 samples)
+
+PCK@0.2:    0.2396
+MPJPE:      127.0348 px
+MSE:        24554.3490 px2
+AUC:        0.3259
+Det Rate:   69.40%
+Detected:   347/500
+
+Wrist           0.1880
+Thumb_CMC       0.1860
+Thumb_MCP       0.2180
+Thumb_IP        0.2580
+Thumb_Tip       0.2760
+Index_MCP       0.2080
+Index_PIP       0.2360
+Index_DIP       0.2460
+Index_Tip       0.2580
+Middle_MCP      0.2160
+Middle_PIP      0.2540
+Middle_DIP      0.2780
+Middle_Tip      0.2600
+Ring_MCP        0.2140
+Ring_PIP        0.2480
+Ring_DIP        0.2720
+Ring_Tip        0.2620
+Pinky_MCP       0.2100
+Pinky_PIP       0.2280
+Pinky_DIP       0.2540
+Pinky_Tip       0.2620

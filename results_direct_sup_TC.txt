@@ -1,0 +1,33 @@
+Direct Supervision Best (Epoch 25) — Teacher Coords Reference
+Dataset: RHD test split (2727 samples)
+Reference: Teacher (HRNetV2-W18 + DARK) decoded coordinates
+
+PCK@0.2:    0.3378
+MPJPE:      72.6268 px
+MSE:        6972.7231 px2
+AUC:        0.4580
+Det Rate:   99.96%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.1988      84.1892
+Thumb_MCP           0.2963      78.2738
+Thumb_PIP           0.3465      70.9352
+Thumb_DIP           0.3146      71.2704
+Thumb_Tip           0.2765      74.5052
+Index_MCP           0.3231      78.2574
+Index_PIP           0.3960      66.9562
+Index_DIP           0.3718      67.9819
+Index_Tip           0.3183      70.1334
+Middle_MCP          0.4107      70.3138
+Middle_PIP          0.4492      65.9800
+Middle_DIP          0.3722      66.5962
+Middle_Tip          0.2970      72.2255
+Ring_MCP            0.4048      71.4007
+Ring_PIP            0.4173      66.2088
+Ring_DIP            0.3531      69.4630
+Ring_Tip            0.2948      72.0374
+Pinky_MCP           0.3352      78.0735
+Pinky_PIP           0.3410      75.8721
+Pinky_DIP           0.3121      76.6039
+Pinky_Tip           0.2651      77.8857

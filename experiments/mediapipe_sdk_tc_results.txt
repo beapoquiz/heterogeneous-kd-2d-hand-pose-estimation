@@ -1,0 +1,35 @@
+Official MediaPipe SDK — Teacher Coord Evaluation
+Model: Full (model_complexity=1, 1.98M params)
+Reference: HRNetV2-W18 teacher predictions (RHD-trained)
+Dataset: RHD test split (2727 samples)
+
+PCK@0.2:    0.4592
+MPJPE:      115.4435 px
+MSE:        24714.1660 px2
+AUC:        0.4465
+Det Rate:   66.23%
+Detected:   1806/2727
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.5064     114.1070
+Thumb_CMC           0.4877     114.2378
+Thumb_MCP           0.4617     113.7616
+Thumb_IP            0.4668     114.4356
+Thumb_Tip           0.4422     117.8846
+Index_MCP           0.4584     114.0730
+Index_PIP           0.4778     112.3074
+Index_DIP           0.4642     113.2092
+Index_Tip           0.4140     121.2736
+Middle_MCP          0.4741     113.8037
+Middle_PIP          0.4972     110.3799
+Middle_DIP          0.5064     112.2057
+Middle_Tip          0.4349     119.5824
+Ring_MCP            0.4881     112.6903
+Ring_PIP            0.4954     110.4652
+Ring_DIP            0.4877     112.3104
+Ring_Tip            0.4136     120.0539
+Pinky_MCP           0.4312     117.4159
+Pinky_PIP           0.4239     117.9512
+Pinky_DIP           0.4254     118.5281
+Pinky_Tip           0.3850     123.6365

@@ -1,0 +1,33 @@
+Direct Supervision Best (Epoch 25) — GT Reference
+Dataset: RHD test split (2727 samples)
+Reference: Raw GT annotations
+
+PCK@0.2:    0.7447
+MPJPE:      40.3440 px
+MSE:        2061.1648 px2
+AUC:        0.6857
+Det Rate:   99.96%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.7415      40.1211
+Thumb_MCP           0.7019      41.7854
+Thumb_PIP           0.7418      40.2719
+Thumb_DIP           0.7561      39.6232
+Thumb_Tip           0.7693      39.3502
+Index_MCP           0.7191      41.7835
+Index_PIP           0.7488      40.4333
+Index_DIP           0.7631      39.8541
+Index_Tip           0.7734      39.2047
+Middle_MCP          0.7275      40.6858
+Middle_PIP          0.7631      39.6970
+Middle_DIP          0.7660      39.6882
+Middle_Tip          0.7748      39.3415
+Ring_MCP            0.7132      41.2810
+Ring_PIP            0.7561      40.0190
+Ring_DIP            0.7510      39.9319
+Ring_Tip            0.7591      39.7878
+Pinky_MCP           0.7162      41.5592
+Pinky_PIP           0.7261      41.1235
+Pinky_DIP           0.7334      40.8708
+Pinky_Tip           0.7363      40.8110

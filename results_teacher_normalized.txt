@@ -1,0 +1,35 @@
+Teacher (HRNetV2-W18 DARK) — Normalized PCK Evaluation
+Pretrained on RHD2D | No finetuning | Official checkpoint
+Dataset: RHD test split (2727 samples)
+Reference: Ground Truth annotations
+PCK metric: thr = 0.2 x bbox_size (matches official mmpose)
+
+PCK@0.2 (norm): 0.6357
+EPE:           18.4548 px
+MSE:           8898.4951 px2
+AUC:           0.6289
+Det Rate:      100.00%
+
+Joint              PCK@0.2     EPE (px)
+----------------------------------------
+Wrist               0.7165      16.7514
+Thumb_MCP           0.6183      18.1796
+Thumb_PIP           0.6586      15.6687
+Thumb_DIP           0.6593      15.4183
+Thumb_Tip           0.7077      14.8807
+Index_MCP           0.5757      21.5969
+Index_PIP           0.6296      19.2584
+Index_DIP           0.6597      15.6569
+Index_Tip           0.6494      15.3946
+Middle_MCP          0.5765      22.2084
+Middle_PIP          0.6791      16.9600
+Middle_DIP          0.6780      17.7404
+Middle_Tip          0.6865      14.8169
+Ring_MCP            0.5431      22.1021
+Ring_PIP            0.6597      19.6348
+Ring_DIP            0.6832      16.0084
+Ring_Tip            0.6898      15.1955
+Pinky_MCP           0.5075      25.7877
+Pinky_PIP           0.5783      23.4689
+Pinky_DIP           0.5897      20.3185
+Pinky_Tip           0.6040      20.5036

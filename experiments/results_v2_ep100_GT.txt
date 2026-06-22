@@ -1,0 +1,33 @@
+Distilled V2 Epoch 100 — GT Reference Evaluation
+Dataset: RHD test split (2727 samples)
+Reference: Raw GT annotations
+
+PCK@0.2:    0.3367
+MPJPE:      70.9542 px
+MSE:        6452.1611 px2
+AUC:        0.4606
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.2222      84.6190
+Thumb_MCP           0.3414      72.5777
+Thumb_PIP           0.3154      73.4524
+Thumb_DIP           0.3319      70.6362
+Thumb_Tip           0.2776      76.4983
+Index_MCP           0.3663      70.2596
+Index_PIP           0.3553      68.2349
+Index_DIP           0.3407      70.0350
+Index_Tip           0.3238      70.9496
+Middle_MCP          0.4008      66.4493
+Middle_PIP          0.3700      68.4518
+Middle_DIP          0.3850      64.9708
+Middle_Tip          0.3077      72.9908
+Ring_MCP            0.4034      66.8319
+Ring_PIP            0.3788      66.5168
+Ring_DIP            0.3513      67.8890
+Ring_Tip            0.3025      72.6829
+Pinky_MCP           0.3564      70.3742
+Pinky_PIP           0.3381      70.2614
+Pinky_DIP           0.3205      71.1768
+Pinky_Tip           0.2824      74.1800

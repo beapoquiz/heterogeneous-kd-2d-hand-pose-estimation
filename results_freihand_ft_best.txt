@@ -1,0 +1,35 @@
+FreiHAND Fine-Tuned Best — Full Evaluation
+Fine-tuned on FreiHAND | 50 Epochs | Best Checkpoint (Epoch 50)
+Starting checkpoint : checkpoints/distilled_v2_ft_epoch_150.pth  (RHD Epoch 150)
+Dataset: FreiHAND validation split (1628 samples)
+Ground truth: FreiHAND 3D -> 2D projected keypoints
+
+PCK@0.2:    0.9961
+MPJPE:      7.4465 px
+MSE:        112.9765 px2
+AUC:        0.9411
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               1.0000       6.2014
+Thumb_MCP           1.0000       6.2211
+Thumb_PIP           0.9975       6.7431
+Thumb_DIP           0.9945       7.4451
+Thumb_Tip           0.9834      11.0797
+Index_MCP           0.9994       5.8296
+Index_PIP           0.9975       6.7932
+Index_DIP           0.9975       7.6780
+Index_Tip           0.9902      10.6922
+Middle_MCP          1.0000       5.2254
+Middle_PIP          1.0000       5.8480
+Middle_DIP          0.9975       6.7721
+Middle_Tip          0.9914       9.7910
+Ring_MCP            0.9994       5.5541
+Ring_PIP            0.9994       6.0029
+Ring_DIP            0.9982       7.1258
+Ring_Tip            0.9926      10.0870
+Pinky_MCP           0.9963       6.5273
+Pinky_PIP           0.9963       6.8500
+Pinky_DIP           0.9951       7.6648
+Pinky_Tip           0.9926      10.2442

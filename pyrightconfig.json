@@ -1,0 +1,8 @@
+{
+  "extraPaths": [
+    "student_model"
+  ],
+  "ignore": [
+    "**cv2**"
+  ]
+}

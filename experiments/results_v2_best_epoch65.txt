@@ -1,0 +1,32 @@
+Distilled v2 Best (Epoch 65) — Full Evaluation
+Dataset: RHD test split (2727 samples)
+
+PCK@0.2:    0.7434
+MPJPE:      37.6759 px
+MSE:        3129.9541 px2
+AUC:        0.7174
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.7939      34.4883
+Thumb_MCP           0.6718      45.2629
+Thumb_PIP           0.7396      35.9334
+Thumb_DIP           0.7503      34.8529
+Thumb_Tip           0.8031      32.6078
+Index_MCP           0.6637      48.4719
+Index_PIP           0.7521      37.1102
+Index_DIP           0.7576      35.5478
+Index_Tip           0.7525      35.5510
+Middle_MCP          0.7176      41.7827
+Middle_PIP          0.7862      34.6707
+Middle_DIP          0.7847      32.8727
+Middle_Tip          0.7726      32.7057
+Ring_MCP            0.6857      43.8763
+Ring_PIP            0.7792      33.7234
+Ring_DIP            0.7825      32.7805
+Ring_Tip            0.8060      31.5601
+Pinky_MCP           0.6648      47.5195
+Pinky_PIP           0.7019      41.8281
+Pinky_DIP           0.7231      39.7786
+Pinky_Tip           0.7217      38.2693

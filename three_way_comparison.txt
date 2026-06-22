@@ -1,0 +1,21 @@
+THREE-WAY STUDENT COMPARISON
+Samples: 500, Dataset: RHD Test
+
+Untrained:
+  PCK@0.2: 0.0047
+  MPJPE:   187.1145 px
+  AUC:     0.0249
+  Det Rate:0.00%
+
+MediaPipe_Original:
+  PCK@0.2: 0.3844
+  MPJPE:   68.6229 px
+  AUC:     0.4778
+  Det Rate:49.20%
+
+Distilled_v1:
+  PCK@0.2: 0.5181
+  MPJPE:   59.9471 px
+  AUC:     0.5530
+  Det Rate:73.80%
+

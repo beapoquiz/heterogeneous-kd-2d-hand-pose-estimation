@@ -1,0 +1,35 @@
+Teacher (HRNetV2-W18 DARK) — GT Evaluation
+Pretrained on RHD2D | No finetuning | Official checkpoint
+Dataset: RHD test split (2727 samples)
+Reference: Ground Truth annotations
+Threshold: PCK@0.2 = 51.2 px fixed (0.2 x 256)
+
+PCK@0.2:    0.2849
+MPJPE:      83.2156 px
+MSE:        17248.1152 px2
+AUC:        0.4066
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.2032      91.2316
+Thumb_MCP           0.2758      85.6600
+Thumb_PIP           0.2978      80.2675
+Thumb_DIP           0.2692      80.7186
+Thumb_Tip           0.2519      83.6402
+Index_MCP           0.2637      88.1382
+Index_PIP           0.3080      80.9580
+Index_DIP           0.2945      79.7599
+Index_Tip           0.2750      80.8230
+Middle_MCP          0.3165      84.0785
+Middle_PIP          0.3333      78.4192
+Middle_DIP          0.3040      80.1168
+Middle_Tip          0.2633      82.1095
+Ring_MCP            0.3333      82.5985
+Ring_PIP            0.3315      79.9929
+Ring_DIP            0.2864      80.4713
+Ring_Tip            0.2706      81.9530
+Pinky_MCP           0.2860      88.3289
+Pinky_PIP           0.2956      85.9982
+Pinky_DIP           0.2684      85.1577
+Pinky_Tip           0.2549      87.1045

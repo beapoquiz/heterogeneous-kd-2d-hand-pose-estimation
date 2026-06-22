@@ -1,0 +1,58 @@
+# ── Virtual environment ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── Model checkpoints and weights ────────────────────────────────────────────
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.onnx
+
+# ── Datasets ─────────────────────────────────────────────────────────────────
+dataset/
+freihand/
+
+# ── Generated outputs ────────────────────────────────────────────────────────
+thesis_figures/
+vis_results/
+eval_results/
+work_dirs/
+
+# ── External framework (install separately via pip/mim) ──────────────────────
+mmpose/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+pyrightconfig.json
+
+# ── Archive/zip files ────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tar.bz2

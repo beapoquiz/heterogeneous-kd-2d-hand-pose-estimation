@@ -1,0 +1,149 @@
+=================================================================
+ THESIS BENCHMARK — Heterogeneous Knowledge Distillation
+ Student: BlazeHandLandmark   Teacher: HRNetV2-W18 + DARK
+=================================================================
+  Device  : cuda
+  GPU     : NVIDIA GeForce RTX 4050 Laptop GPU
+  CUDA    : 12.1
+  PyTorch : 2.1.0+cu121
+
+=================================================================
+  STUDENT — BlazeHandLandmark  (distilled_v2_ft_epoch_150.pth)
+            100 ep. distillation + 50 ep. RHD fine-tuning
+=================================================================
+  Loading checkpoint...
+
+  [1] Architecture & Output Shapes
+-----------------------------------------------------------------
+  Class              : BlazeHandLandmark
+  Input shape        : (1, 3, 256, 256)  (B × C × H × W)
+  hand_flag  shape   : (1,)   — detection confidence [0,1]
+  handed     shape   : (1,)   — handedness (not used in KD)
+  landmarks  shape   : (1, 21, 3)   — (B,21,3) normalised [0,1]
+  For KD/eval: landmarks[:,:,:2] * 256  →  (B,21,2) pixel coords
+
+  [2-4] Parameters & Size
+-----------------------------------------------------------------
+  Total parameters   :    2,013,857
+  Trainable params   :    2,013,857
+  Parameters (M)     :       2.0139 M
+  Weight size        :       7.6823 MB  (float32 tensors)
+  Checkpoint on disk :       7.7497 MB
+
+  [5] GPU Inference Speed  (single image, BS=1)
+-----------------------------------------------------------------
+  Device         : cuda
+  Warm-up passes : 50   Timed passes: 500
+  Mean           :     7.661 ms  →     130.5 FPS
+  Median         :     7.192 ms  →     139.0 FPS
+  Min            :     6.245 ms  →     160.1 FPS
+  Max            :    15.683 ms  →      63.8 FPS
+  Std            :     1.390 ms
+  p95            :    10.754 ms  →      93.0 FPS
+  p99            :    14.071 ms  →      71.1 FPS
+
+  [6] CPU Inference Speed  (single image, BS=1)
+-----------------------------------------------------------------
+  Device         : cpu
+  Warm-up passes : 50   Timed passes: 100
+  Mean           :    43.522 ms  →      23.0 FPS
+  Median         :    39.000 ms  →      25.6 FPS
+  Min            :    36.044 ms  →      27.7 FPS
+  Max            :    80.818 ms  →      12.4 FPS
+  Std            :     9.834 ms
+  p95            :    67.067 ms  →      14.9 FPS
+  p99            :    71.619 ms  →      14.0 FPS
+
+  [7] Multi-Batch GPU Throughput
+-----------------------------------------------------------------
+  Batch size  1       :    126.3 images / sec
+  Batch size  4       :    473.1 images / sec
+  Batch size  8       :    891.9 images / sec
+  Batch size 16       :    905.1 images / sec
+
+  [8] GPU Memory Usage  (single forward pass, BS=1)
+-----------------------------------------------------------------
+  Peak allocated     :   142.92 MB
+  Peak reserved      :   292.00 MB
+
+  [9] Detection Rate — Full RHD Test Set (2 728 images)
+-----------------------------------------------------------------
+  Running inference on every test sample (this takes a few minutes)...
+  Samples evaluated  : 2,727
+  Detected (≥0.5)    : 2,727  /  2,727
+  Detection rate     : 100.0000 %
+  Mean hand_flag     : 1.0000
+  Std  hand_flag     : 0.0000
+  Min  hand_flag     : 1.0000
+  Max  hand_flag     : 1.0000
+
+=================================================================
+  TEACHER — HRNetV2-W18 + DARK Decoding
+            (hrnetv2_w18_rhd2d_256x256_dark-4df3a347_20210330.pth)
+=================================================================
+  Loading teacher model...
+  (flip_test disabled for benchmark — TTA not used in real-time inference)
+
+  [10] Parameters & Size
+-----------------------------------------------------------------
+  Total parameters   :    9,641,661
+  Trainable params   :    9,641,661
+  Parameters (M)     :       9.6417 M
+  Weight size        :      36.7800 MB  (float32 tensors)
+  Checkpoint on disk :      37.1467 MB
+
+  [11] Teacher GPU Speed — Full Pipeline (backbone+neck+head + decode)
+       (submodule calls — same ops used during distillation training)
+-----------------------------------------------------------------
+  Device         : cuda
+  Warm-up passes : 50   Timed passes: 500
+  Mean           :   132.041 ms  →       7.6 FPS
+  Median         :   145.449 ms  →       6.9 FPS
+  Min            :    50.864 ms  →      19.7 FPS
+  Max            :   344.338 ms  →       2.9 FPS
+  Std            :    51.201 ms
+  p95            :   208.543 ms  →       4.8 FPS
+  p99            :   248.329 ms  →       4.0 FPS
+
+  [12] Teacher GPU Speed — Forward Only (backbone+neck+head, no decode)
+-----------------------------------------------------------------
+  Device         : cuda
+  Warm-up passes : 50   Timed passes: 500
+  Mean           :    63.921 ms  →      15.6 FPS
+  Median         :    54.233 ms  →      18.4 FPS
+  Min            :    46.309 ms  →      21.6 FPS
+  Max            :   259.326 ms  →       3.9 FPS
+  Std            :    31.079 ms
+  p95            :   147.150 ms  →       6.8 FPS
+  p99            :   211.527 ms  →       4.7 FPS
+
+=================================================================
+  COMPARISON TABLE — Student vs Teacher
+=================================================================
+  Metric                           Student (BlazeHand) Teacher (HRNetV2-W18)
+  ------------------------------------------------------------------------
+  Architecture                      BlazeHandLandmark TopdownPoseEstimator
+  Output type                      Coordinates (21×3) Heatmaps (21×64×64)
+  Parameters                                 2.0139 M           9.6417 M
+  Weight size (float32)                       7.68 MB           36.78 MB
+  Checkpoint on disk                          7.75 MB           37.15 MB
+  GPU FPS (full pipeline)                   139.0 FPS            6.9 FPS
+  GPU latency (median)                       7.192 ms         145.449 ms
+  CPU FPS                                    25.6 FPS                N/A
+  CPU latency (median)                      39.000 ms                N/A
+
+  GPU speedup (full pipeline): 20.2x  faster than teacher
+  GPU speedup (vs fwd-only)  : 7.5x  faster than teacher backbone+head
+  Parameter compression      : 4.8x  fewer parameters
+  Size compression           : 4.8x  smaller (float32 weights)
+
+  Note: detection rate / accuracy is from eval scripts, not this benchmark.
+  Teacher RHD test: PCK@0.2=0.992, AUC=0.902, EPE=2.21 px (from paper)
+
+  Real-time threshold: >= 30 FPS
+  Student real-time (GPU): YES  (139.0 FPS)
+  Student real-time (CPU): NO  (25.6 FPS)
+
+=================================================================
+  BENCHMARK COMPLETE
+=================================================================

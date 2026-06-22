@@ -1,0 +1,31 @@
+COMPREHENSIVE EVALUATION — Student vs Teacher
+Dataset: RHD Test Split (2727 samples)
+
+Overall PCK@0.2 : 0.5030
+Overall MPJPE   : 61.7568 px
+EPE             : 61.7568 px
+AUC             : 0.5419
+
+Joint              PCK@0.2    MPJPE(px)
+----------------------------------------
+Wrist               0.5468      59.9718
+Thumb_MCP           0.3660      75.6573
+Thumb_PIP           0.4609      64.2846
+Thumb_DIP           0.4756      61.0465
+Thumb_Tip           0.5574      57.1966
+Index_MCP           0.3568      76.9264
+Index_PIP           0.5303      60.2132
+Index_DIP           0.5578      56.3378
+Index_Tip           0.5552      57.5327
+Middle_MCP          0.4404      67.5305
+Middle_PIP          0.6095      53.9287
+Middle_DIP          0.6106      51.4142
+Middle_Tip          0.5996      53.2243
+Ring_MCP            0.4206      68.3409
+Ring_PIP            0.5809      53.5457
+Ring_DIP            0.5878      53.2077
+Ring_Tip            0.5798      53.8811
+Pinky_MCP           0.3693      74.7725
+Pinky_PIP           0.4470      67.2050
+Pinky_DIP           0.4477      66.0548
+Pinky_Tip           0.4639      64.6205

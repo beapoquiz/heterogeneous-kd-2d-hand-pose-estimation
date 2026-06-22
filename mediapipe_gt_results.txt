@@ -1,0 +1,32 @@
+Official MediaPipe SDK Evaluation — GT Reference
+Model: Full (model_complexity=1, 1.98M params)
+Dataset: RHD test (500 samples)
+
+PCK@0.2:    0.1876
+MPJPE:      135.1376 px
+MSE:        26155.7672 px2
+AUC:        0.2771
+Det Rate:   69.40%
+Detected:   347/500
+
+Wrist           0.1580
+Thumb_MCP       0.1140
+Thumb_PIP       0.1300
+Thumb_DIP       0.1620
+Thumb_Tip       0.1680
+Index_MCP       0.1580
+Index_PIP       0.1880
+Index_DIP       0.1780
+Index_Tip       0.1260
+Middle_MCP      0.1360
+Middle_PIP      0.2180
+Middle_DIP      0.2760
+Middle_Tip      0.2300
+Ring_MCP        0.1320
+Ring_PIP        0.2040
+Ring_DIP        0.2880
+Ring_Tip        0.2260
+Pinky_MCP       0.1440
+Pinky_PIP       0.2060
+Pinky_DIP       0.2460
+Pinky_Tip       0.2520

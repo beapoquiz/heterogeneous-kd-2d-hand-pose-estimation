@@ -11,20 +11,20 @@ Undergraduate thesis project: transferring knowledge from a high-accuracy teache
 | Model | Params | Weight Size | GPU FPS | CPU FPS |
 |---|---|---|---|---|
 | Teacher — HRNetV2-W18 + DARK | 9.64 M | 37.2 MB | 6.9 | — |
-| Student — BlazeHandLandmark (distilled) | 2.01 M | 7.7 MB | **139.0** | 25.6 |
-| **Compression ratio** | **4.8×** | **4.8×** | **20.2× faster** | — |
+| Student — BlazeHandLandmark (distilled) | 2.01 M | 7.7 MB | **139.0** | 25.6[cite: 1] |
+| **Compression ratio** | **4.8×**[cite: 1] | **4.8×** | **20.2× faster**[cite: 1] | — |
 
-- Student detection rate on RHD test set (2,727 images): **100%**
-- Student GPU real-time: **YES** (139.0 FPS >> 30 FPS threshold)
+- Student detection rate on RHD test set (2,727 images): **100%**[cite: 1]
+- Student GPU real-time: **YES** (139.0 FPS >> 30 FPS threshold)[cite: 1]
 
 ### Accuracy on RHD Test Set
 
 | Model | PCK@0.2 (vs GT) | MPJPE | AUC |
 |---|---|---|---|
-| Teacher — HRNetV2-W18 + DARK | **99.2%** | 2.21 px | 0.902 |
-| Student — BlazeHandLandmark (distilled + fine-tuned) | **74.7%** | 37.0 px | 0.722 |
-| Direct Supervision Baseline | 33.8% | 72.7 px | 0.458 |
-| MediaPipe SDK (zmurez weights) | 30.1% | 104.3 px | 0.395 |
+| Teacher — HRNetV2-W18 + DARK | **99.2%**[cite: 1] | 2.18 px[cite: 1] | 0.902[cite: 1] |
+| Student — BlazeHandLandmark (distilled + fine-tuned) | **81.9%**[cite: 1] | 30.14 px[cite: 1] | 0.769[cite: 1] |
+| Direct Supervision Baseline | 97.0%[cite: 1] | 13.63 px[cite: 1] | 0.894[cite: 1] |
+| MediaPipe SDK (zmurez weights) | 62.7%[cite: 1] | 78.25 px[cite: 1] | 0.589[cite: 1] |
 
 Full per-joint breakdown and fine-tuned model results are in the `results_*.txt` files.
 
@@ -37,14 +37,8 @@ Full per-joint breakdown and fine-tuned model results are in the `results_*.txt`
 **Student:** `BlazeHandLandmark` — a PyTorch port of the MediaPipe hand landmark model. Outputs 21 normalised (x,y,z) coordinates directly.
 
 **Loss function (both training stages):**
-```
+```text
 L = L_wing(p̂, p_T) + 0.002 × L_bone(p̂, p_T)
-```
-- Targets `p_T` are teacher heatmap-decoded coordinates (not ground-truth labels)
-- Wing Loss: w=10, ε=2
-- Bone Loss: MSE over 20 finger-segment lengths
-
----
 
 ## Setup
 

@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\caption{Pre-training Baseline Reference --- Student Architecture
+         Initialization States (500 samples$^{\dagger}$, vs.\ GT)}
+\label{tab:pretrain_ref}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{PCK@0.2} & \textbf{AUC} & \textbf{MPJPE (px)} & \textbf{Det.\ Rate} \\
+\midrule
+Untrained BlazeHandLandmark (random init.)  & 0.005 & 0.025 & 186.96 & 100\% \\
+MediaPipe-inspired BlazeHandLandmark(pre-distillation weights)    & 0.243 & 0.323 & 126.95 & 69.4\% \\
+\midrule
+\textbf{FT V2 ep.\,150} \textit{(after distillation)} & \textbf{0.748} & \textbf{0.723} & \textbf{36.87} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{3pt}
+\parbox{\columnwidth}{\scriptsize
+  $^{\dagger}$500-sample subset; detection failures scored at
+  256\,px per joint (not excluded).}
+\end{table}

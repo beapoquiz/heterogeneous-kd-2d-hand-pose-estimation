@@ -21,7 +21,12 @@ pipeline = [
     dict(type='LoadImage'),
     dict(type='GetBBoxCenterScale'),
     dict(type='TopdownAffine', input_size=(256,256)),
-    dict(type='PackPoseInputs')
+    # pack_transformed=True is required: TopdownAffine writes the
+    # crop-warped keypoints to results['transformed_keypoints'] and
+    # leaves results['keypoints'] as the original, un-warped image-space
+    # annotation. Without this flag, gt_instances.keypoints is NOT in the
+    # same 256x256 crop space as the student's predictions below.
+    dict(type='PackPoseInputs', pack_transformed=True)
 ]
 ds = Rhd2DDataset(
     data_root=r'C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\dataset\rhd',
@@ -44,8 +49,9 @@ print()
 for idx, batch in enumerate(loader):
     img_tensor = torch.stack(batch['inputs']).float() / 255.0
 
-    # Raw GT reference — same as direct supervision eval
-    gt_raw = batch['data_samples'][0].gt_instances.keypoints[0]
+    # Raw GT reference — same as direct supervision eval, in the same
+    # 256x256 crop space the model's output lives in
+    gt_raw = batch['data_samples'][0].gt_instances.transformed_keypoints[0]
     tc = np.clip(gt_raw, 0, 255).astype(np.float32)
 
     with torch.no_grad():

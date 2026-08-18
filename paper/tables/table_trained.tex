@@ -1,0 +1,28 @@
+\begin{table}[!t]
+\caption{Trained Model Comparison --- Full RHD2D Test Set
+         (2,727 samples, vs.\ GT annotations)}
+\label{tab:trained}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{Params} & \textbf{PCK@0.2} & \textbf{AUC}
+  & \textbf{MPJPE} & \textbf{Det.} & \textbf{GPU} & \textbf{$\Delta$ AUC} \\
+ & \textbf{(M)} & & & \textbf{(px)} & \textbf{Rate} & \textbf{FPS} & \textbf{vs.\ Direct} \\
+\midrule
+Direct Sup.\ (ep.\,25)
+  & 2.01 & 0.425 & 0.538 & 59.87 & 99.96\% & 139.0 & ref. \\
+Stage 1: Dist.\ V2 (ep.\,100)
+  & 2.01 & 0.746 & 0.721 & 37.23 & 100\% & 139.0 & $+$0.183 \\
+\textbf{Stage 2: FT V2 (ep.\,150)}
+  & \textbf{2.01} & \textbf{0.748} & \textbf{0.723} & \textbf{36.87} & \textbf{100\%} & \textbf{139.0} & \textbf{$+$0.185} \\
+\midrule
+Teacher (HRNetV2-W18)$^{a}$
+  & 9.64 & 0.992 & 0.902 & 2.21 & 100\% & 6.9 & --- \\
+\bottomrule
+\multicolumn{8}{l}{\scriptsize $^{a}$Upper-bound reference (official
+  MMPose benchmark); not a deployment candidate.}
+\end{tabular}%
+}
+\end{table}

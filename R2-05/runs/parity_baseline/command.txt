@@ -1,0 +1,1 @@
+python directsup_parity_v2.py --run-name parity_baseline --protocol v2match --seed 42 --epochs 100

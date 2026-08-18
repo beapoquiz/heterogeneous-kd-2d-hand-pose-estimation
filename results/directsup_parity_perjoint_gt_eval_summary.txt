@@ -1,0 +1,35 @@
+Direct Sup. (parity, ep.100, v2match) -- Per-Joint GT Reference Evaluation
+Checkpoint: R2-05/runs/parity_baseline/checkpoints/parity_final.pth
+Dataset: dataset/rhd/annotations/rhd_test.json, full split, N=2727
+Protocol: GT-space (gt_instances.transformed_keypoints, pack_transformed=True), fixed 51.2px PCK@0.2 threshold, AUC over linspace(0,128,20)/128. Matches experiments/v2_GT_comprehensive_eval.py and experiments/distilled_v2_ft_ep150_gt_comprehensive_eval.py.
+Joint mapping: corrected (index 1=Tip .. index 4=MCP per finger block); see module docstring.
+
+PCK@0.2:    0.969546
+MPJPE:      13.627437 px
+MSE:        454.937012 px2
+AUC:        0.894229
+Det Rate:   100.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist             0.984598      14.1370
+Thumb_Tip         0.931793      19.1504
+Thumb_DIP         0.961129      13.9274
+Thumb_PIP         0.973231      13.7873
+Thumb_MCP         0.986065      11.4625
+Index_Tip         0.949395      17.4914
+Index_DIP         0.975431      13.6735
+Index_PIP         0.984598      10.7029
+Index_MCP         0.984232       9.6873
+Middle_Tip        0.958196      16.0798
+Middle_DIP        0.983132      12.1435
+Middle_PIP        0.988265      11.0560
+Middle_MCP        0.992299       8.3801
+Ring_Tip          0.937660      18.8750
+Ring_DIP          0.979098      13.1282
+Ring_PIP          0.980565      11.1477
+Ring_MCP          0.980931       9.5597
+Pinky_Tip         0.938761      18.9042
+Pinky_DIP         0.958196      15.3390
+Pinky_PIP         0.965897      14.7400
+Pinky_MCP         0.966997      12.8032

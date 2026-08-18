@@ -1,0 +1,3 @@
+epoch,train_loss,train_wing,train_bone,lr,epoch_seconds,val_pck,val_auc,val_mpjpe,val_n
+1,39.429919,35.960144,1734.887265,9.99755747e-05,77.93,,,,
+2,31.219563,29.475148,872.207243,9.99023231e-05,71.69,,,,

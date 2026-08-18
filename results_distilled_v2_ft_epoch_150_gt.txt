@@ -3,32 +3,32 @@ Fine-tuned on RHD | 50 Epochs | Last Checkpoint
 Dataset: RHD test split (2727 samples)
 Reference: Ground Truth annotations
 
-PCK@0.2:    0.3374
-MPJPE:      73.2839 px
-MSE:        15012.0693 px2
-AUC:        0.4590
+PCK@0.2:    0.8188
+MPJPE:      30.1391 px
+MSE:        1919.6516 px2
+AUC:        0.7686
 Det Rate:   100.00%
 
 Joint              PCK@0.2        MPJPE
 ----------------------------------------
-Wrist               0.2219      85.9115
-Thumb_MCP           0.3418      72.6998
-Thumb_PIP           0.3179      73.6687
-Thumb_DIP           0.3304      71.3628
-Thumb_Tip           0.2798      77.1389
-Index_MCP           0.3671      71.9983
-Index_PIP           0.3561      71.6150
-Index_DIP           0.3392      71.3240
-Index_Tip           0.3238      71.6491
-Middle_MCP          0.4004      69.8042
-Middle_PIP          0.3707      69.9173
-Middle_DIP          0.3803      69.2985
-Middle_Tip          0.3091      74.1398
-Ring_MCP            0.4059      69.7251
-Ring_PIP            0.3788      71.2109
-Ring_DIP            0.3524      70.5831
-Ring_Tip            0.3018      74.5371
-Pinky_MCP           0.3572      74.9774
-Pinky_PIP           0.3399      74.9654
-Pinky_DIP           0.3154      74.4969
-Pinky_Tip           0.2948      77.9366
+Wrist               0.8497      29.9532
+Thumb_MCP           0.7657      35.4790
+Thumb_PIP           0.8210      28.6039
+Thumb_DIP           0.8346      27.9771
+Thumb_Tip           0.8966      23.6692
+Index_MCP           0.7466      37.2195
+Index_PIP           0.8064      30.2052
+Index_DIP           0.8475      26.0552
+Index_Tip           0.8973      22.3193
+Middle_MCP          0.7811      33.9765
+Middle_PIP          0.8401      28.2815
+Middle_DIP          0.8786      24.9357
+Middle_Tip          0.9061      21.1108
+Ring_MCP            0.7297      39.0199
+Ring_PIP            0.8453      27.6341
+Ring_DIP            0.8585      25.5769
+Ring_Tip            0.8838      23.9084
+Pinky_MCP           0.6854      44.0387
+Pinky_PIP           0.7682      35.2718
+Pinky_DIP           0.7631      35.8115
+Pinky_Tip           0.7895      31.8742

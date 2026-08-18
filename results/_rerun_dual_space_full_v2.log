@@ -1,0 +1,36 @@
+C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\.venv\lib\site-packages\mmpose\datasets\datasets\utils.py:102: UserWarning: The metainfo config file "configs/_base_/datasets/rhd2d.py" does not exist. A matched config file "C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\.venv\lib\site-packages\mmpose\.mim\configs\_base_\datasets\rhd2d.py" will be used instead.
+  warnings.warn(
+Device: cuda
+Loading teacher (HRNetV2-W18 + DARK)...
+Loads checkpoint by local backend from path: C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\checkpoints/hrnetv2_w18_rhd2d_256x256_dark-4df3a347_20210330.pth
+Loading students...
+  loaded Direct Sup. (ep.25) <- checkpoints/direct_sup_best.pth
+  loaded Dist. V2-100 <- checkpoints/distilled_v2_epoch_100.pth
+  loaded FT V2-150 <- checkpoints/distilled_v2_ft_epoch_150.pth
+loading annotations into memory...
+Done (t=0.36s)
+creating index...
+index created!
+
+Running dual-space eval on 2727 RHD test samples...
+  [500/2727]   135.9s elapsed
+  [1000/2727]   269.0s elapsed
+  [1500/2727]   382.3s elapsed
+  [2000/2727]   512.7s elapsed
+  [2500/2727]   651.2s elapsed
+
+Inference done in 684.9s (2727 samples, 3 models, 2 spaces)
+Wrote C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\results\table_viii_both_spaces.csv
+Wrote C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\results\per_joint_winloss_gt_space.csv  (space=GT-space, Direct Sup. vs FT V2-150)
+Wrote C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\results\per_joint_winloss_teacher_space.csv  (space=teacher-decoded-space, Direct Sup. vs FT V2-150)
+Wrote C:\Users\Bea Juliana Poquiz\Desktop\mmpose_thesis\results\rerun_dual_space_summary.txt
+
+==============================================================================
+Direct Sup. (ep.25)    GT-space               PCK=0.4248 MPJPE=59.8680px AUC=0.5377
+Direct Sup. (ep.25)    teacher-decoded-space  PCK=0.3378 MPJPE=72.6268px AUC=0.4580
+Dist. V2-100           GT-space               PCK=0.8190 MPJPE=30.3453px AUC=0.7670
+Dist. V2-100           teacher-decoded-space  PCK=0.7460 MPJPE=37.1806px AUC=0.7207
+FT V2-150              GT-space               PCK=0.8188 MPJPE=30.1391px AUC=0.7686
+FT V2-150              teacher-decoded-space  PCK=0.7479 MPJPE=36.8172px AUC=0.7234
+==============================================================================
+Total wall-clock: 684.9s

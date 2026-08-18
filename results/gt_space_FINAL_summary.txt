@@ -1,0 +1,37 @@
+GT-space FINAL summary -- all three trained models, post pack_transformed fix
+==============================================================================
+Each model evaluated by its own (now-fixed) legacy per-model script, full
+2,727-sample RHD test set, against gt_instances.transformed_keypoints
+(256x256 crop space) -- NOT gt_instances.keypoints (original-image space,
+the bug). Sources:
+
+  Direct Sup. (ep.25)    <- directsup_gt_comprehensive_eval.py  (checkpoint: checkpoints/direct_sup_best.pth)
+                            writes -> results_direct_sup_GT.txt
+  Dist. V2-100           <- experiments/v2_GT_comprehensive_eval.py  (checkpoint: checkpoints/distilled_v2_epoch_100.pth)
+                            writes -> experiments\results_v2_ep100_GT.txt
+  FT V2-150              <- experiments/distilled_v2_ft_ep150_gt_comprehensive_eval.py  (checkpoint: checkpoints/distilled_v2_ft_epoch_150.pth)
+                            writes -> results_distilled_v2_ft_epoch_150_gt.txt
+
+GT-clipping convention: all three scripts now apply np.clip(gt, 0, 255)
+uniformly (RESOLVED -- distilled_v2_ft_ep150_gt_comprehensive_eval.py
+previously omitted this clip; fixed and re-run). As a result all three
+models' PCK/MPJPE/AUC below now match scripts/rerun_dual_space_eval.py /
+results/table_viii_both_spaces.csv's GT-space numbers exactly (within float
+precision): FT V2-150 PCK=0.8188/MPJPE=30.14px/AUC=0.7686, matching that
+file's 0.8188/30.14px/0.7686.
+
+------------------------------------------------------------------------------
+
+Direct Sup. (ep.25)
+  PCK@0.2=0.4248  MPJPE=59.8680px  AUC=0.5377  MSE=4530.6309px^2  Det.Rate=99.96%
+
+Dist. V2-100
+  PCK@0.2=0.8190  MPJPE=30.3453px  AUC=0.7670  MSE=1920.8010px^2  Det.Rate=100.00%
+
+FT V2-150
+  PCK@0.2=0.8188  MPJPE=30.1391px  AUC=0.7686  MSE=1919.6516px^2  Det.Rate=100.00%
+
+==============================================================================
+Headline (true GT-space, all three now uniformly fixed for the pack_transformed bug):
+  Dist. V2-100 beats Direct Sup. by +0.3942 PCK@0.2
+  FT V2-150 beats Direct Sup. by +0.3940 PCK@0.2

@@ -60,7 +60,13 @@ pipeline = [
     dict(type='LoadImage'),
     dict(type='GetBBoxCenterScale'),
     dict(type='TopdownAffine', input_size=(256, 256)),
-    dict(type='PackPoseInputs'),
+    # pack_transformed=True is required: TopdownAffine writes the
+    # crop-warped keypoints to results['transformed_keypoints'] and
+    # leaves results['keypoints'] as the original, un-warped image-space
+    # annotation. Both MediaPipe and BlazeHandLandmark below predict in
+    # the warped 256x256 crop space (they're fed img_rgb, the warped
+    # image), so the GT reference must be transformed_keypoints too.
+    dict(type='PackPoseInputs', pack_transformed=True),
 ]
 ds     = Rhd2DDataset(data_root=RHD_ROOT, ann_file=ANN_FILE, pipeline=pipeline)
 loader = DataLoader(ds, batch_size=1, shuffle=False, collate_fn=pseudo_collate)
@@ -102,7 +108,8 @@ for idx, batch in enumerate(tqdm(loader, total=N, desc='Evaluating')):
         break
 
     img_tensor = torch.stack(batch['inputs']).float() / 255.0          # (1,3,256,256)
-    gt_kpts    = np.array(batch['data_samples'][0].gt_instances.keypoints[0])  # (21,2)
+    gt_kpts    = np.clip(np.array(batch['data_samples'][0].gt_instances.transformed_keypoints[0]),
+                          0, 255).astype(np.float32)  # (21,2), 256x256 crop space
     gt_ordered = gt_kpts[MP_TO_RHD]   # reorder GT to MediaPipe joint numbering
 
     # BGR→RGB uint8  (256×256×3)

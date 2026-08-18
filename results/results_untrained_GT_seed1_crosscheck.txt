@@ -1,0 +1,33 @@
+Untrained BlazeHandLandmark (random init.) — GT Reference
+Dataset: RHD test split (2727 samples)
+Reference: gt_instances.transformed_keypoints, clipped [0,255]
+
+PCK@0.2:    0.0014
+MPJPE:      188.6564 px
+MSE:        37527.5938 px2
+AUC:        0.0138
+Det Rate:   0.00%
+
+Joint              PCK@0.2        MPJPE
+----------------------------------------
+Wrist               0.0095     182.2786
+Thumb_MCP           0.0004     195.6483
+Thumb_PIP           0.0004     188.3832
+Thumb_DIP           0.0007     181.8699
+Thumb_Tip           0.0011     177.7597
+Index_MCP           0.0015     198.2605
+Index_PIP           0.0015     189.4187
+Index_DIP           0.0011     177.8778
+Index_Tip           0.0004     168.2935
+Middle_MCP          0.0011     207.2543
+Middle_PIP          0.0011     195.4093
+Middle_DIP          0.0011     181.7248
+Middle_Tip          0.0007     171.0236
+Ring_MCP            0.0015     206.4586
+Ring_PIP            0.0007     195.1662
+Ring_DIP            0.0011     184.5621
+Ring_Tip            0.0015     176.6874
+Pinky_MCP           0.0007     206.1805
+Pinky_PIP           0.0007     199.0556
+Pinky_DIP           0.0007     193.8713
+Pinky_Tip           0.0011     184.6003

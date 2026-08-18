@@ -1,0 +1,271 @@
+model,joint,metric,value,coordinate_space,script,command
+Direct Sup. (ep.25),ALL,PCK@0.2,0.424765,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),ALL,MPJPE,59.867962,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),ALL,AUC,0.537698,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Wrist,PCK@0.2,0.203520,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Wrist,MPJPE,82.963272,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_MCP,PCK@0.2,0.385772,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_MCP,MPJPE,65.421692,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_PIP,PCK@0.2,0.422809,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_PIP,MPJPE,59.823971,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_DIP,PCK@0.2,0.363770,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_DIP,MPJPE,63.983074,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_Tip,PCK@0.2,0.283828,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_Tip,MPJPE,70.276924,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_MCP,PCK@0.2,0.411808,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_MCP,MPJPE,63.203396,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_PIP,PCK@0.2,0.456546,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_PIP,MPJPE,56.701290,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_DIP,PCK@0.2,0.401540,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_DIP,MPJPE,58.871941,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_Tip,PCK@0.2,0.325633,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_Tip,MPJPE,62.793701,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_MCP,PCK@0.2,0.581591,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_MCP,MPJPE,50.788750,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_PIP,PCK@0.2,0.601760,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_PIP,MPJPE,48.867672,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_DIP,PCK@0.2,0.449212,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_DIP,MPJPE,56.611404,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_Tip,PCK@0.2,0.328933,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_Tip,MPJPE,61.683769,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_MCP,PCK@0.2,0.503850,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_MCP,MPJPE,53.835670,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_PIP,PCK@0.2,0.554455,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_PIP,MPJPE,49.993736,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_DIP,PCK@0.2,0.489916,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_DIP,MPJPE,55.062798,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_Tip,PCK@0.2,0.366703,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_Tip,MPJPE,61.401241,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_MCP,PCK@0.2,0.477448,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_MCP,MPJPE,55.972324,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_PIP,PCK@0.2,0.469747,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_PIP,MPJPE,56.364342,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_DIP,PCK@0.2,0.455446,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_DIP,MPJPE,58.045395,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_Tip,PCK@0.2,0.385772,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_Tip,MPJPE,64.560982,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),ALL,PCK@0.2,0.337839,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),ALL,MPJPE,72.626816,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),ALL,AUC,0.458044,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Wrist,PCK@0.2,0.198753,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Wrist,MPJPE,84.189240,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_MCP,PCK@0.2,0.296296,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_MCP,MPJPE,78.273773,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_PIP,PCK@0.2,0.346535,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_PIP,MPJPE,70.935165,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_DIP,PCK@0.2,0.314631,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_DIP,MPJPE,71.270424,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_Tip,PCK@0.2,0.276494,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Thumb_Tip,MPJPE,74.505226,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_MCP,PCK@0.2,0.323066,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_MCP,MPJPE,78.257408,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_PIP,PCK@0.2,0.396040,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_PIP,MPJPE,66.956207,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_DIP,PCK@0.2,0.371837,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_DIP,MPJPE,67.981903,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_Tip,PCK@0.2,0.318298,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Index_Tip,MPJPE,70.133400,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_MCP,PCK@0.2,0.410708,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_MCP,MPJPE,70.313797,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_PIP,PCK@0.2,0.449212,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_PIP,MPJPE,65.979973,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_DIP,PCK@0.2,0.372204,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_DIP,MPJPE,66.596207,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_Tip,PCK@0.2,0.297030,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Middle_Tip,MPJPE,72.225487,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_MCP,PCK@0.2,0.404840,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_MCP,MPJPE,71.400749,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_PIP,PCK@0.2,0.417308,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_PIP,MPJPE,66.208847,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_DIP,PCK@0.2,0.353135,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_DIP,MPJPE,69.462990,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_Tip,PCK@0.2,0.294829,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Ring_Tip,MPJPE,72.037422,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_MCP,PCK@0.2,0.335167,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_MCP,MPJPE,78.073540,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_PIP,PCK@0.2,0.341034,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_PIP,MPJPE,75.872063,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_DIP,PCK@0.2,0.312065,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_DIP,MPJPE,76.603889,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_Tip,PCK@0.2,0.265127,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Direct Sup. (ep.25),Pinky_Tip,MPJPE,77.885712,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,PCK@0.2,0.818953,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,MPJPE,30.345285,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,AUC,0.767026,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Wrist,PCK@0.2,0.846718,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Wrist,MPJPE,30.238503,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_MCP,PCK@0.2,0.762010,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_MCP,MPJPE,36.122993,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_PIP,PCK@0.2,0.818482,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_PIP,MPJPE,28.949085,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_DIP,PCK@0.2,0.836084,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_DIP,MPJPE,28.095530,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_Tip,PCK@0.2,0.898790,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_Tip,MPJPE,23.846111,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_MCP,PCK@0.2,0.744774,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_MCP,MPJPE,37.309547,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_PIP,PCK@0.2,0.805281,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_PIP,MPJPE,30.422850,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_DIP,PCK@0.2,0.853685,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_DIP,MPJPE,26.213144,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_Tip,PCK@0.2,0.902090,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_Tip,MPJPE,22.370716,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_MCP,PCK@0.2,0.785479,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_MCP,MPJPE,34.132698,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_PIP,PCK@0.2,0.838284,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_PIP,MPJPE,28.557503,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_DIP,PCK@0.2,0.878988,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_DIP,MPJPE,25.099503,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_Tip,PCK@0.2,0.907957,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_Tip,MPJPE,21.346235,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_MCP,PCK@0.2,0.727906,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_MCP,MPJPE,39.245296,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_PIP,PCK@0.2,0.843784,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_PIP,MPJPE,27.994253,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_DIP,PCK@0.2,0.862853,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_DIP,MPJPE,25.615417,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_Tip,PCK@0.2,0.883388,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_Tip,MPJPE,24.120417,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_MCP,PCK@0.2,0.681335,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_MCP,MPJPE,44.127548,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_PIP,PCK@0.2,0.767877,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_PIP,MPJPE,35.615124,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_DIP,PCK@0.2,0.762376,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_DIP,MPJPE,35.746220,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_Tip,PCK@0.2,0.789879,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_Tip,MPJPE,32.082424,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,PCK@0.2,0.746049,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,MPJPE,37.180576,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,ALL,AUC,0.720736,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Wrist,PCK@0.2,0.800880,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Wrist,MPJPE,33.956520,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_MCP,PCK@0.2,0.677301,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_MCP,MPJPE,44.829411,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_PIP,PCK@0.2,0.743308,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_PIP,MPJPE,35.736523,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_DIP,PCK@0.2,0.755409,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_DIP,MPJPE,34.450462,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_Tip,PCK@0.2,0.801247,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Thumb_Tip,MPJPE,32.094952,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_MCP,PCK@0.2,0.665933,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_MCP,MPJPE,47.749844,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_PIP,PCK@0.2,0.753575,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_PIP,MPJPE,36.400856,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_DIP,PCK@0.2,0.759443,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_DIP,MPJPE,34.894531,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_Tip,PCK@0.2,0.749908,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Index_Tip,MPJPE,35.369209,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_MCP,PCK@0.2,0.719472,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_MCP,MPJPE,40.971863,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_PIP,PCK@0.2,0.781445,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_PIP,MPJPE,34.303326,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_DIP,PCK@0.2,0.789512,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_DIP,MPJPE,32.183994,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_Tip,PCK@0.2,0.779245,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Middle_Tip,MPJPE,32.416782,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_MCP,PCK@0.2,0.695636,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_MCP,MPJPE,43.346039,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_PIP,PCK@0.2,0.783645,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_PIP,MPJPE,33.361946,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_DIP,PCK@0.2,0.784378,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_DIP,MPJPE,32.174480,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_Tip,PCK@0.2,0.801613,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Ring_Tip,MPJPE,31.351809,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_MCP,PCK@0.2,0.666667,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_MCP,MPJPE,46.729271,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_PIP,PCK@0.2,0.707004,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_PIP,MPJPE,41.251850,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_DIP,PCK@0.2,0.725339,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_DIP,MPJPE,39.144936,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_Tip,PCK@0.2,0.726073,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+Dist. V2-100,Pinky_Tip,MPJPE,38.073685,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,PCK@0.2,0.818796,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,MPJPE,30.139128,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,AUC,0.768556,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Wrist,PCK@0.2,0.849652,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Wrist,MPJPE,29.953152,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_MCP,PCK@0.2,0.765677,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_MCP,MPJPE,35.478973,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_PIP,PCK@0.2,0.821049,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_PIP,MPJPE,28.603884,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_DIP,PCK@0.2,0.834617,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_DIP,MPJPE,27.977150,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_Tip,PCK@0.2,0.896590,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_Tip,MPJPE,23.669184,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_MCP,PCK@0.2,0.746608,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_MCP,MPJPE,37.219486,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_PIP,PCK@0.2,0.806381,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_PIP,MPJPE,30.205151,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_DIP,PCK@0.2,0.847451,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_DIP,MPJPE,26.055237,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_Tip,PCK@0.2,0.897323,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_Tip,MPJPE,22.319305,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_MCP,PCK@0.2,0.781078,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_MCP,MPJPE,33.976490,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_PIP,PCK@0.2,0.840117,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_PIP,MPJPE,28.281460,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_DIP,PCK@0.2,0.878621,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_DIP,MPJPE,24.935732,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_Tip,PCK@0.2,0.906124,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_Tip,MPJPE,21.110781,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_MCP,PCK@0.2,0.729740,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_MCP,MPJPE,39.019890,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_PIP,PCK@0.2,0.845251,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_PIP,MPJPE,27.634121,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_DIP,PCK@0.2,0.858453,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_DIP,MPJPE,25.576893,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_Tip,PCK@0.2,0.883755,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_Tip,MPJPE,23.908443,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_MCP,PCK@0.2,0.685369,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_MCP,MPJPE,44.038712,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_PIP,PCK@0.2,0.768243,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_PIP,MPJPE,35.271839,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_DIP,PCK@0.2,0.763110,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_DIP,MPJPE,35.811539,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_Tip,PCK@0.2,0.789512,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_Tip,MPJPE,31.874224,GT-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,PCK@0.2,0.747918,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,MPJPE,36.817219,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,ALL,AUC,0.723435,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Wrist,PCK@0.2,0.801613,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Wrist,MPJPE,33.350620,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_MCP,PCK@0.2,0.678401,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_MCP,MPJPE,44.044910,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_PIP,PCK@0.2,0.740741,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_PIP,MPJPE,35.247242,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_DIP,PCK@0.2,0.753942,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_DIP,MPJPE,34.025063,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_Tip,PCK@0.2,0.804914,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Thumb_Tip,MPJPE,31.590801,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_MCP,PCK@0.2,0.664466,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_MCP,MPJPE,47.495979,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_PIP,PCK@0.2,0.750275,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_PIP,MPJPE,35.986324,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_DIP,PCK@0.2,0.759076,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_DIP,MPJPE,34.679588,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_Tip,PCK@0.2,0.754675,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Index_Tip,MPJPE,35.166862,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_MCP,PCK@0.2,0.719839,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_MCP,MPJPE,40.720585,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_PIP,PCK@0.2,0.785479,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_PIP,MPJPE,33.996353,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_DIP,PCK@0.2,0.796480,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_DIP,MPJPE,31.891052,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_Tip,PCK@0.2,0.777411,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Middle_Tip,MPJPE,32.176662,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_MCP,PCK@0.2,0.693069,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_MCP,MPJPE,43.114120,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_PIP,PCK@0.2,0.784745,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_PIP,MPJPE,33.093105,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_DIP,PCK@0.2,0.789146,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_DIP,MPJPE,32.009254,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_Tip,PCK@0.2,0.806014,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Ring_Tip,MPJPE,31.030313,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_MCP,PCK@0.2,0.672534,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_MCP,MPJPE,46.359272,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_PIP,PCK@0.2,0.711771,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_PIP,MPJPE,40.812046,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_DIP,PCK@0.2,0.730106,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_DIP,MPJPE,38.717922,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_Tip,PCK@0.2,0.731573,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py
+FT V2-150,Pinky_Tip,MPJPE,37.653599,teacher-decoded-space,scripts/rerun_dual_space_eval.py,python scripts/rerun_dual_space_eval.py

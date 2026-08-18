@@ -1,0 +1,326 @@
+model,joint,metric,value
+Direct Sup. (ep.25),ALL,PCK@0.2,0.424712
+Direct Sup. (ep.25),ALL,MPJPE,59.868130
+Direct Sup. (ep.25),ALL,AUC,0.537700
+Direct Sup. (ep.25),Wrist,PCK@0.2,0.203520
+Direct Sup. (ep.25),Wrist,MPJPE,82.964409
+Direct Sup. (ep.25),Thumb_MCP,PCK@0.2,0.385772
+Direct Sup. (ep.25),Thumb_MCP,MPJPE,65.421944
+Direct Sup. (ep.25),Thumb_PIP,PCK@0.2,0.422809
+Direct Sup. (ep.25),Thumb_PIP,MPJPE,59.824299
+Direct Sup. (ep.25),Thumb_DIP,PCK@0.2,0.363770
+Direct Sup. (ep.25),Thumb_DIP,MPJPE,63.983414
+Direct Sup. (ep.25),Thumb_Tip,PCK@0.2,0.283828
+Direct Sup. (ep.25),Thumb_Tip,MPJPE,70.277580
+Direct Sup. (ep.25),Index_MCP,PCK@0.2,0.411808
+Direct Sup. (ep.25),Index_MCP,MPJPE,63.203377
+Direct Sup. (ep.25),Index_PIP,PCK@0.2,0.456546
+Direct Sup. (ep.25),Index_PIP,MPJPE,56.701599
+Direct Sup. (ep.25),Index_DIP,PCK@0.2,0.401540
+Direct Sup. (ep.25),Index_DIP,MPJPE,58.872337
+Direct Sup. (ep.25),Index_Tip,PCK@0.2,0.325266
+Direct Sup. (ep.25),Index_Tip,MPJPE,62.794189
+Direct Sup. (ep.25),Middle_MCP,PCK@0.2,0.581591
+Direct Sup. (ep.25),Middle_MCP,MPJPE,50.788448
+Direct Sup. (ep.25),Middle_PIP,PCK@0.2,0.601760
+Direct Sup. (ep.25),Middle_PIP,MPJPE,48.867432
+Direct Sup. (ep.25),Middle_DIP,PCK@0.2,0.449212
+Direct Sup. (ep.25),Middle_DIP,MPJPE,56.611496
+Direct Sup. (ep.25),Middle_Tip,PCK@0.2,0.328933
+Direct Sup. (ep.25),Middle_Tip,MPJPE,61.684158
+Direct Sup. (ep.25),Ring_MCP,PCK@0.2,0.503850
+Direct Sup. (ep.25),Ring_MCP,MPJPE,53.835190
+Direct Sup. (ep.25),Ring_PIP,PCK@0.2,0.554089
+Direct Sup. (ep.25),Ring_PIP,MPJPE,49.993233
+Direct Sup. (ep.25),Ring_DIP,PCK@0.2,0.489549
+Direct Sup. (ep.25),Ring_DIP,MPJPE,55.062626
+Direct Sup. (ep.25),Ring_Tip,PCK@0.2,0.366703
+Direct Sup. (ep.25),Ring_Tip,MPJPE,61.401798
+Direct Sup. (ep.25),Pinky_MCP,PCK@0.2,0.477448
+Direct Sup. (ep.25),Pinky_MCP,MPJPE,55.971981
+Direct Sup. (ep.25),Pinky_PIP,PCK@0.2,0.469747
+Direct Sup. (ep.25),Pinky_PIP,MPJPE,56.364189
+Direct Sup. (ep.25),Pinky_DIP,PCK@0.2,0.455446
+Direct Sup. (ep.25),Pinky_DIP,MPJPE,58.045372
+Direct Sup. (ep.25),Pinky_Tip,PCK@0.2,0.385772
+Direct Sup. (ep.25),Pinky_Tip,MPJPE,64.561447
+Direct Sup. (ep.25),ALL,Det.Rate,99.9633
+Dist. V2-100,ALL,PCK@0.2,0.818988
+Dist. V2-100,ALL,MPJPE,30.344137
+Dist. V2-100,ALL,AUC,0.767037
+Dist. V2-100,Wrist,PCK@0.2,0.846718
+Dist. V2-100,Wrist,MPJPE,30.238325
+Dist. V2-100,Thumb_MCP,PCK@0.2,0.762010
+Dist. V2-100,Thumb_MCP,MPJPE,36.121899
+Dist. V2-100,Thumb_PIP,PCK@0.2,0.818849
+Dist. V2-100,Thumb_PIP,MPJPE,28.948286
+Dist. V2-100,Thumb_DIP,PCK@0.2,0.836084
+Dist. V2-100,Thumb_DIP,MPJPE,28.095343
+Dist. V2-100,Thumb_Tip,PCK@0.2,0.899157
+Dist. V2-100,Thumb_Tip,MPJPE,23.845381
+Dist. V2-100,Index_MCP,PCK@0.2,0.744774
+Dist. V2-100,Index_MCP,MPJPE,37.307693
+Dist. V2-100,Index_PIP,PCK@0.2,0.805281
+Dist. V2-100,Index_PIP,MPJPE,30.421886
+Dist. V2-100,Index_DIP,PCK@0.2,0.854052
+Dist. V2-100,Index_DIP,MPJPE,26.212143
+Dist. V2-100,Index_Tip,PCK@0.2,0.902090
+Dist. V2-100,Index_Tip,MPJPE,22.370316
+Dist. V2-100,Middle_MCP,PCK@0.2,0.785479
+Dist. V2-100,Middle_MCP,MPJPE,34.130966
+Dist. V2-100,Middle_PIP,PCK@0.2,0.838284
+Dist. V2-100,Middle_PIP,MPJPE,28.556053
+Dist. V2-100,Middle_DIP,PCK@0.2,0.878988
+Dist. V2-100,Middle_DIP,MPJPE,25.098705
+Dist. V2-100,Middle_Tip,PCK@0.2,0.907591
+Dist. V2-100,Middle_Tip,MPJPE,21.345346
+Dist. V2-100,Ring_MCP,PCK@0.2,0.727906
+Dist. V2-100,Ring_MCP,MPJPE,39.243576
+Dist. V2-100,Ring_PIP,PCK@0.2,0.843784
+Dist. V2-100,Ring_PIP,MPJPE,27.992981
+Dist. V2-100,Ring_DIP,PCK@0.2,0.862853
+Dist. V2-100,Ring_DIP,MPJPE,25.614307
+Dist. V2-100,Ring_Tip,PCK@0.2,0.883388
+Dist. V2-100,Ring_Tip,MPJPE,24.119648
+Dist. V2-100,Pinky_MCP,PCK@0.2,0.681335
+Dist. V2-100,Pinky_MCP,MPJPE,44.125408
+Dist. V2-100,Pinky_PIP,PCK@0.2,0.767877
+Dist. V2-100,Pinky_PIP,MPJPE,35.613304
+Dist. V2-100,Pinky_DIP,PCK@0.2,0.762376
+Dist. V2-100,Pinky_DIP,MPJPE,35.744194
+Dist. V2-100,Pinky_Tip,PCK@0.2,0.789879
+Dist. V2-100,Pinky_Tip,MPJPE,32.081131
+Dist. V2-100,ALL,Det.Rate,100.0000
+FT V2-150,ALL,PCK@0.2,0.818779
+FT V2-150,ALL,MPJPE,30.139282
+FT V2-150,ALL,AUC,0.768570
+FT V2-150,Wrist,PCK@0.2,0.849652
+FT V2-150,Wrist,MPJPE,29.954351
+FT V2-150,Thumb_MCP,PCK@0.2,0.765310
+FT V2-150,Thumb_MCP,MPJPE,35.479519
+FT V2-150,Thumb_PIP,PCK@0.2,0.821049
+FT V2-150,Thumb_PIP,MPJPE,28.604130
+FT V2-150,Thumb_DIP,PCK@0.2,0.834617
+FT V2-150,Thumb_DIP,MPJPE,27.977482
+FT V2-150,Thumb_Tip,PCK@0.2,0.896590
+FT V2-150,Thumb_Tip,MPJPE,23.669836
+FT V2-150,Index_MCP,PCK@0.2,0.746608
+FT V2-150,Index_MCP,MPJPE,37.219917
+FT V2-150,Index_PIP,PCK@0.2,0.806381
+FT V2-150,Index_PIP,MPJPE,30.205837
+FT V2-150,Index_DIP,PCK@0.2,0.847451
+FT V2-150,Index_DIP,MPJPE,26.055868
+FT V2-150,Index_Tip,PCK@0.2,0.896956
+FT V2-150,Index_Tip,MPJPE,22.319036
+FT V2-150,Middle_MCP,PCK@0.2,0.781078
+FT V2-150,Middle_MCP,MPJPE,33.977467
+FT V2-150,Middle_PIP,PCK@0.2,0.840117
+FT V2-150,Middle_PIP,MPJPE,28.281851
+FT V2-150,Middle_DIP,PCK@0.2,0.878621
+FT V2-150,Middle_DIP,MPJPE,24.936415
+FT V2-150,Middle_Tip,PCK@0.2,0.906124
+FT V2-150,Middle_Tip,MPJPE,21.110743
+FT V2-150,Ring_MCP,PCK@0.2,0.729740
+FT V2-150,Ring_MCP,MPJPE,39.020222
+FT V2-150,Ring_PIP,PCK@0.2,0.845618
+FT V2-150,Ring_PIP,MPJPE,27.633793
+FT V2-150,Ring_DIP,PCK@0.2,0.858453
+FT V2-150,Ring_DIP,MPJPE,25.576822
+FT V2-150,Ring_Tip,PCK@0.2,0.883755
+FT V2-150,Ring_Tip,MPJPE,23.907633
+FT V2-150,Pinky_MCP,PCK@0.2,0.685369
+FT V2-150,Pinky_MCP,MPJPE,44.038269
+FT V2-150,Pinky_PIP,PCK@0.2,0.768243
+FT V2-150,Pinky_PIP,MPJPE,35.270996
+FT V2-150,Pinky_DIP,PCK@0.2,0.763110
+FT V2-150,Pinky_DIP,MPJPE,35.811005
+FT V2-150,Pinky_Tip,PCK@0.2,0.789512
+FT V2-150,Pinky_Tip,MPJPE,31.873722
+FT V2-150,ALL,Det.Rate,100.0000
+Untrained,ALL,PCK@0.2,0.001362
+Untrained,ALL,MPJPE,188.875824
+Untrained,ALL,AUC,0.013670
+Untrained,Wrist,PCK@0.2,0.009534
+Untrained,Wrist,MPJPE,182.204651
+Untrained,Thumb_MCP,PCK@0.2,0.000367
+Untrained,Thumb_MCP,MPJPE,195.789078
+Untrained,Thumb_PIP,PCK@0.2,0.000367
+Untrained,Thumb_PIP,MPJPE,189.395782
+Untrained,Thumb_DIP,PCK@0.2,0.000733
+Untrained,Thumb_DIP,MPJPE,182.344635
+Untrained,Thumb_Tip,PCK@0.2,0.001100
+Untrained,Thumb_Tip,MPJPE,177.750305
+Untrained,Index_MCP,PCK@0.2,0.001467
+Untrained,Index_MCP,MPJPE,198.762589
+Untrained,Index_PIP,PCK@0.2,0.001467
+Untrained,Index_PIP,MPJPE,188.088028
+Untrained,Index_DIP,PCK@0.2,0.001100
+Untrained,Index_DIP,MPJPE,176.857590
+Untrained,Index_Tip,PCK@0.2,0.000367
+Untrained,Index_Tip,MPJPE,169.218002
+Untrained,Middle_MCP,PCK@0.2,0.001100
+Untrained,Middle_MCP,MPJPE,207.580856
+Untrained,Middle_PIP,PCK@0.2,0.001100
+Untrained,Middle_PIP,MPJPE,194.932709
+Untrained,Middle_DIP,PCK@0.2,0.001100
+Untrained,Middle_DIP,MPJPE,181.554779
+Untrained,Middle_Tip,PCK@0.2,0.000733
+Untrained,Middle_Tip,MPJPE,172.161850
+Untrained,Ring_MCP,PCK@0.2,0.001467
+Untrained,Ring_MCP,MPJPE,204.952148
+Untrained,Ring_PIP,PCK@0.2,0.000733
+Untrained,Ring_PIP,MPJPE,194.617233
+Untrained,Ring_DIP,PCK@0.2,0.001100
+Untrained,Ring_DIP,MPJPE,185.972961
+Untrained,Ring_Tip,PCK@0.2,0.001467
+Untrained,Ring_Tip,MPJPE,177.115524
+Untrained,Pinky_MCP,PCK@0.2,0.000733
+Untrained,Pinky_MCP,MPJPE,205.997620
+Untrained,Pinky_PIP,PCK@0.2,0.000733
+Untrained,Pinky_PIP,MPJPE,199.517838
+Untrained,Pinky_DIP,PCK@0.2,0.000733
+Untrained,Pinky_DIP,MPJPE,195.309677
+Untrained,Pinky_Tip,PCK@0.2,0.001100
+Untrained,Pinky_Tip,MPJPE,186.268387
+Untrained,ALL,Det.Rate,0.0000
+"Teacher (crop-space, fixed-thr, supplementary)",ALL,PCK@0.2,0.686573
+"Teacher (crop-space, fixed-thr, supplementary)",ALL,MPJPE,43.700256
+"Teacher (crop-space, fixed-thr, supplementary)",ALL,AUC,0.681132
+"Teacher (crop-space, fixed-thr, supplementary)",Wrist,PCK@0.2,0.778144
+"Teacher (crop-space, fixed-thr, supplementary)",Wrist,MPJPE,41.433857
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_MCP,PCK@0.2,0.652732
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_MCP,MPJPE,46.552513
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_PIP,PCK@0.2,0.695270
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_PIP,MPJPE,40.276020
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_DIP,PCK@0.2,0.701870
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_DIP,MPJPE,40.047882
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_Tip,PCK@0.2,0.753575
+"Teacher (crop-space, fixed-thr, supplementary)",Thumb_Tip,MPJPE,37.630188
+"Teacher (crop-space, fixed-thr, supplementary)",Index_MCP,PCK@0.2,0.615695
+"Teacher (crop-space, fixed-thr, supplementary)",Index_MCP,MPJPE,53.270096
+"Teacher (crop-space, fixed-thr, supplementary)",Index_PIP,PCK@0.2,0.682068
+"Teacher (crop-space, fixed-thr, supplementary)",Index_PIP,MPJPE,43.015842
+"Teacher (crop-space, fixed-thr, supplementary)",Index_DIP,PCK@0.2,0.707371
+"Teacher (crop-space, fixed-thr, supplementary)",Index_DIP,MPJPE,39.258312
+"Teacher (crop-space, fixed-thr, supplementary)",Index_Tip,PCK@0.2,0.703704
+"Teacher (crop-space, fixed-thr, supplementary)",Index_Tip,MPJPE,39.328419
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_MCP,PCK@0.2,0.640631
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_MCP,MPJPE,49.805126
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_PIP,PCK@0.2,0.731940
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_PIP,MPJPE,40.961685
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_DIP,PCK@0.2,0.737807
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_DIP,MPJPE,37.224422
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_Tip,PCK@0.2,0.737074
+"Teacher (crop-space, fixed-thr, supplementary)",Middle_Tip,MPJPE,37.202003
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_MCP,PCK@0.2,0.610928
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_MCP,MPJPE,51.342186
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_PIP,PCK@0.2,0.712505
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_PIP,MPJPE,40.371475
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_DIP,PCK@0.2,0.740741
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_DIP,MPJPE,37.830826
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_Tip,PCK@0.2,0.746975
+"Teacher (crop-space, fixed-thr, supplementary)",Ring_Tip,MPJPE,37.248230
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_MCP,PCK@0.2,0.558489
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_MCP,MPJPE,57.727821
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_PIP,PCK@0.2,0.622662
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_PIP,MPJPE,51.212681
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_DIP,PCK@0.2,0.641731
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_DIP,MPJPE,49.038784
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_Tip,PCK@0.2,0.646131
+"Teacher (crop-space, fixed-thr, supplementary)",Pinky_Tip,MPJPE,46.926998
+"Teacher (crop-space, fixed-thr, supplementary)",ALL,Det.Rate,100.0000
+"Teacher (official own-protocol, Runner)",ALL,PCK@0.2,0.991763
+"Teacher (official own-protocol, Runner)",ALL,MPJPE,2.182650
+"Teacher (official own-protocol, Runner)",ALL,AUC,0.902255
+BlazeHandLandmark (zmurez pre-distillation),ALL,PCK@0.2,0.626679
+BlazeHandLandmark (zmurez pre-distillation),ALL,MPJPE,78.245997
+BlazeHandLandmark (zmurez pre-distillation),ALL,AUC,0.589484
+BlazeHandLandmark (zmurez pre-distillation),Wrist,PCK@0.2,0.502384
+BlazeHandLandmark (zmurez pre-distillation),Wrist,MPJPE,88.252566
+BlazeHandLandmark (zmurez pre-distillation),Thumb_MCP,PCK@0.2,0.562890
+BlazeHandLandmark (zmurez pre-distillation),Thumb_MCP,MPJPE,82.467155
+BlazeHandLandmark (zmurez pre-distillation),Thumb_PIP,PCK@0.2,0.573157
+BlazeHandLandmark (zmurez pre-distillation),Thumb_PIP,MPJPE,81.936962
+BlazeHandLandmark (zmurez pre-distillation),Thumb_DIP,PCK@0.2,0.578291
+BlazeHandLandmark (zmurez pre-distillation),Thumb_DIP,MPJPE,81.137174
+BlazeHandLandmark (zmurez pre-distillation),Thumb_Tip,PCK@0.2,0.559223
+BlazeHandLandmark (zmurez pre-distillation),Thumb_Tip,MPJPE,85.557728
+BlazeHandLandmark (zmurez pre-distillation),Index_MCP,PCK@0.2,0.660066
+BlazeHandLandmark (zmurez pre-distillation),Index_MCP,MPJPE,74.564113
+BlazeHandLandmark (zmurez pre-distillation),Index_PIP,PCK@0.2,0.652365
+BlazeHandLandmark (zmurez pre-distillation),Index_PIP,MPJPE,75.941893
+BlazeHandLandmark (zmurez pre-distillation),Index_DIP,PCK@0.2,0.644664
+BlazeHandLandmark (zmurez pre-distillation),Index_DIP,MPJPE,75.892317
+BlazeHandLandmark (zmurez pre-distillation),Index_Tip,PCK@0.2,0.559589
+BlazeHandLandmark (zmurez pre-distillation),Index_Tip,MPJPE,84.646833
+BlazeHandLandmark (zmurez pre-distillation),Middle_MCP,PCK@0.2,0.704804
+BlazeHandLandmark (zmurez pre-distillation),Middle_MCP,MPJPE,71.966901
+BlazeHandLandmark (zmurez pre-distillation),Middle_PIP,PCK@0.2,0.702970
+BlazeHandLandmark (zmurez pre-distillation),Middle_PIP,MPJPE,72.870983
+BlazeHandLandmark (zmurez pre-distillation),Middle_DIP,PCK@0.2,0.744774
+BlazeHandLandmark (zmurez pre-distillation),Middle_DIP,MPJPE,68.870683
+BlazeHandLandmark (zmurez pre-distillation),Middle_Tip,PCK@0.2,0.643198
+BlazeHandLandmark (zmurez pre-distillation),Middle_Tip,MPJPE,77.612829
+BlazeHandLandmark (zmurez pre-distillation),Ring_MCP,PCK@0.2,0.662266
+BlazeHandLandmark (zmurez pre-distillation),Ring_MCP,MPJPE,74.396611
+BlazeHandLandmark (zmurez pre-distillation),Ring_PIP,PCK@0.2,0.699670
+BlazeHandLandmark (zmurez pre-distillation),Ring_PIP,MPJPE,73.057801
+BlazeHandLandmark (zmurez pre-distillation),Ring_DIP,PCK@0.2,0.726806
+BlazeHandLandmark (zmurez pre-distillation),Ring_DIP,MPJPE,71.004180
+BlazeHandLandmark (zmurez pre-distillation),Ring_Tip,PCK@0.2,0.607994
+BlazeHandLandmark (zmurez pre-distillation),Ring_Tip,MPJPE,80.136984
+BlazeHandLandmark (zmurez pre-distillation),Pinky_MCP,PCK@0.2,0.579391
+BlazeHandLandmark (zmurez pre-distillation),Pinky_MCP,MPJPE,80.370361
+BlazeHandLandmark (zmurez pre-distillation),Pinky_PIP,PCK@0.2,0.599927
+BlazeHandLandmark (zmurez pre-distillation),Pinky_PIP,MPJPE,80.246638
+BlazeHandLandmark (zmurez pre-distillation),Pinky_DIP,PCK@0.2,0.623762
+BlazeHandLandmark (zmurez pre-distillation),Pinky_DIP,MPJPE,78.859007
+BlazeHandLandmark (zmurez pre-distillation),Pinky_Tip,PCK@0.2,0.572057
+BlazeHandLandmark (zmurez pre-distillation),Pinky_Tip,MPJPE,83.376212
+BlazeHandLandmark (zmurez pre-distillation),ALL,Det.Rate,80.0513
+MediaPipe SDK (official),ALL,PCK@0.2,0.596696
+MediaPipe SDK (official),ALL,MPJPE,100.754046
+MediaPipe SDK (official),ALL,AUC,0.552628
+MediaPipe SDK (official),Wrist,PCK@0.2,0.579391
+MediaPipe SDK (official),Wrist,MPJPE,106.426416
+MediaPipe SDK (official),Thumb_MCP,PCK@0.2,0.596260
+MediaPipe SDK (official),Thumb_MCP,MPJPE,102.703423
+MediaPipe SDK (official),Thumb_PIP,PCK@0.2,0.587459
+MediaPipe SDK (official),Thumb_PIP,MPJPE,101.662222
+MediaPipe SDK (official),Thumb_DIP,PCK@0.2,0.587825
+MediaPipe SDK (official),Thumb_DIP,MPJPE,101.158146
+MediaPipe SDK (official),Thumb_Tip,PCK@0.2,0.582325
+MediaPipe SDK (official),Thumb_Tip,MPJPE,103.894021
+MediaPipe SDK (official),Index_MCP,PCK@0.2,0.592226
+MediaPipe SDK (official),Index_MCP,MPJPE,100.187187
+MediaPipe SDK (official),Index_PIP,PCK@0.2,0.605061
+MediaPipe SDK (official),Index_PIP,MPJPE,97.667798
+MediaPipe SDK (official),Index_DIP,PCK@0.2,0.602494
+MediaPipe SDK (official),Index_DIP,MPJPE,98.935070
+MediaPipe SDK (official),Index_Tip,PCK@0.2,0.574991
+MediaPipe SDK (official),Index_Tip,MPJPE,104.417754
+MediaPipe SDK (official),Middle_MCP,PCK@0.2,0.604694
+MediaPipe SDK (official),Middle_MCP,MPJPE,99.915385
+MediaPipe SDK (official),Middle_PIP,PCK@0.2,0.620095
+MediaPipe SDK (official),Middle_PIP,MPJPE,96.822121
+MediaPipe SDK (official),Middle_DIP,PCK@0.2,0.629996
+MediaPipe SDK (official),Middle_DIP,MPJPE,96.386947
+MediaPipe SDK (official),Middle_Tip,PCK@0.2,0.597726
+MediaPipe SDK (official),Middle_Tip,MPJPE,102.017790
+MediaPipe SDK (official),Ring_MCP,PCK@0.2,0.605061
+MediaPipe SDK (official),Ring_MCP,MPJPE,99.572124
+MediaPipe SDK (official),Ring_PIP,PCK@0.2,0.621562
+MediaPipe SDK (official),Ring_PIP,MPJPE,97.079542
+MediaPipe SDK (official),Ring_DIP,PCK@0.2,0.617528
+MediaPipe SDK (official),Ring_DIP,MPJPE,97.874958
+MediaPipe SDK (official),Ring_Tip,PCK@0.2,0.567657
+MediaPipe SDK (official),Ring_Tip,MPJPE,104.332926
+MediaPipe SDK (official),Pinky_MCP,PCK@0.2,0.593693
+MediaPipe SDK (official),Pinky_MCP,MPJPE,100.979987
+MediaPipe SDK (official),Pinky_PIP,PCK@0.2,0.598093
+MediaPipe SDK (official),Pinky_PIP,MPJPE,100.301265
+MediaPipe SDK (official),Pinky_DIP,PCK@0.2,0.595160
+MediaPipe SDK (official),Pinky_DIP,MPJPE,99.876422
+MediaPipe SDK (official),Pinky_Tip,PCK@0.2,0.571324
+MediaPipe SDK (official),Pinky_Tip,MPJPE,103.623454
+MediaPipe SDK (official),ALL,Det.Rate,66.2266

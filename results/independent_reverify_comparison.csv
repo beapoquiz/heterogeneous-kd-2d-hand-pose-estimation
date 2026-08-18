@@ -1,0 +1,157 @@
+reference_file,model,joint,metric,old_value,new_value,pct_diff,verdict
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),ALL,PCK@0.2,0.424800,0.424712,0.0206,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),ALL,MPJPE,59.868000,59.868130,0.0002,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),ALL,AUC,0.537700,0.537700,0.0000,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Wrist,PCK@0.2,0.203500,0.203520,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Wrist,MPJPE,82.963300,82.964409,0.0013,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_MCP,PCK@0.2,0.385800,0.385772,0.0073,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_MCP,MPJPE,65.421700,65.421944,0.0004,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_PIP,PCK@0.2,0.422800,0.422809,0.0021,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_PIP,MPJPE,59.824000,59.824299,0.0005,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_DIP,PCK@0.2,0.363800,0.363770,0.0083,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_DIP,MPJPE,63.983100,63.983414,0.0005,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_Tip,PCK@0.2,0.283800,0.283828,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Thumb_Tip,MPJPE,70.276900,70.277580,0.0010,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_MCP,PCK@0.2,0.411800,0.411808,0.0019,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_MCP,MPJPE,63.203400,63.203377,0.0000,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_PIP,PCK@0.2,0.456500,0.456546,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_PIP,MPJPE,56.701300,56.701599,0.0005,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_DIP,PCK@0.2,0.401500,0.401540,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_DIP,MPJPE,58.871900,58.872337,0.0007,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_Tip,PCK@0.2,0.325600,0.325266,0.1026,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Index_Tip,MPJPE,62.793700,62.794189,0.0008,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_MCP,PCK@0.2,0.581600,0.581591,0.0015,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_MCP,MPJPE,50.788700,50.788448,0.0005,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_PIP,PCK@0.2,0.601800,0.601760,0.0066,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_PIP,MPJPE,48.867700,48.867432,0.0005,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_DIP,PCK@0.2,0.449200,0.449212,0.0026,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_DIP,MPJPE,56.611400,56.611496,0.0002,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_Tip,PCK@0.2,0.328900,0.328933,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Middle_Tip,MPJPE,61.683800,61.684158,0.0006,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_MCP,PCK@0.2,0.503900,0.503850,0.0098,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_MCP,MPJPE,53.835700,53.835190,0.0009,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_PIP,PCK@0.2,0.554500,0.554089,0.0742,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_PIP,MPJPE,49.993700,49.993233,0.0009,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_DIP,PCK@0.2,0.489900,0.489549,0.0717,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_DIP,MPJPE,55.062800,55.062626,0.0003,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_Tip,PCK@0.2,0.366700,0.366703,0.0009,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Ring_Tip,MPJPE,61.401200,61.401798,0.0010,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_MCP,PCK@0.2,0.477400,0.477448,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_MCP,MPJPE,55.972300,55.971981,0.0006,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_PIP,PCK@0.2,0.469700,0.469747,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_PIP,MPJPE,56.364300,56.364189,0.0002,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_DIP,PCK@0.2,0.455400,0.455446,0.0100,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_DIP,MPJPE,58.045400,58.045372,0.0000,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_Tip,PCK@0.2,0.385800,0.385772,0.0073,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Direct Sup. (ep.25),Pinky_Tip,MPJPE,64.561000,64.561447,0.0007,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,ALL,PCK@0.2,0.819000,0.818988,0.0014,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,ALL,MPJPE,30.345300,30.344137,0.0038,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,ALL,AUC,0.767000,0.767037,0.0049,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Wrist,PCK@0.2,0.846700,0.846718,0.0021,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Wrist,MPJPE,30.238500,30.238325,0.0006,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_MCP,PCK@0.2,0.762000,0.762010,0.0013,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_MCP,MPJPE,36.123000,36.121899,0.0030,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_PIP,PCK@0.2,0.818500,0.818849,0.0426,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_PIP,MPJPE,28.949100,28.948286,0.0028,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_DIP,PCK@0.2,0.836100,0.836084,0.0020,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_DIP,MPJPE,28.095500,28.095343,0.0006,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_Tip,PCK@0.2,0.898800,0.899157,0.0397,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Thumb_Tip,MPJPE,23.846100,23.845381,0.0030,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_MCP,PCK@0.2,0.744800,0.744774,0.0034,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_MCP,MPJPE,37.309500,37.307693,0.0048,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_PIP,PCK@0.2,0.805300,0.805281,0.0024,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_PIP,MPJPE,30.422800,30.421886,0.0030,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_DIP,PCK@0.2,0.853700,0.854052,0.0412,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_DIP,MPJPE,26.213100,26.212143,0.0037,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_Tip,PCK@0.2,0.902100,0.902090,0.0011,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Index_Tip,MPJPE,22.370700,22.370316,0.0017,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_MCP,PCK@0.2,0.785500,0.785479,0.0027,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_MCP,MPJPE,34.132700,34.130966,0.0051,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_PIP,PCK@0.2,0.838300,0.838284,0.0019,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_PIP,MPJPE,28.557500,28.556053,0.0051,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_DIP,PCK@0.2,0.879000,0.878988,0.0014,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_DIP,MPJPE,25.099500,25.098705,0.0032,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_Tip,PCK@0.2,0.908000,0.907591,0.0451,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Middle_Tip,MPJPE,21.346200,21.345346,0.0040,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_MCP,PCK@0.2,0.727900,0.727906,0.0008,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_MCP,MPJPE,39.245300,39.243576,0.0044,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_PIP,PCK@0.2,0.843800,0.843784,0.0019,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_PIP,MPJPE,27.994300,27.992981,0.0047,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_DIP,PCK@0.2,0.862900,0.862853,0.0055,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_DIP,MPJPE,25.615400,25.614307,0.0043,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_Tip,PCK@0.2,0.883400,0.883388,0.0013,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Ring_Tip,MPJPE,24.120400,24.119648,0.0031,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_MCP,PCK@0.2,0.681300,0.681335,0.0051,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_MCP,MPJPE,44.127500,44.125408,0.0047,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_PIP,PCK@0.2,0.767900,0.767877,0.0030,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_PIP,MPJPE,35.615100,35.613304,0.0050,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_DIP,PCK@0.2,0.762400,0.762376,0.0031,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_DIP,MPJPE,35.746200,35.744194,0.0056,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_Tip,PCK@0.2,0.789900,0.789879,0.0027,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,Dist. V2-100,Pinky_Tip,MPJPE,32.082400,32.081131,0.0040,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,ALL,PCK@0.2,0.818800,0.818779,0.0026,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,ALL,MPJPE,30.139100,30.139282,0.0006,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,ALL,AUC,0.768600,0.768570,0.0039,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Wrist,PCK@0.2,0.849700,0.849652,0.0057,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Wrist,MPJPE,29.953200,29.954351,0.0038,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_MCP,PCK@0.2,0.765700,0.765310,0.0510,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_MCP,MPJPE,35.479000,35.479519,0.0015,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_PIP,PCK@0.2,0.821000,0.821049,0.0059,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_PIP,MPJPE,28.603900,28.604130,0.0008,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_DIP,PCK@0.2,0.834600,0.834617,0.0020,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_DIP,MPJPE,27.977100,27.977482,0.0014,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_Tip,PCK@0.2,0.896600,0.896590,0.0012,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Thumb_Tip,MPJPE,23.669200,23.669836,0.0027,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_MCP,PCK@0.2,0.746600,0.746608,0.0011,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_MCP,MPJPE,37.219500,37.219917,0.0011,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_PIP,PCK@0.2,0.806400,0.806381,0.0024,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_PIP,MPJPE,30.205200,30.205837,0.0021,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_DIP,PCK@0.2,0.847500,0.847451,0.0057,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_DIP,MPJPE,26.055200,26.055868,0.0026,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_Tip,PCK@0.2,0.897300,0.896956,0.0383,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Index_Tip,MPJPE,22.319300,22.319036,0.0012,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_MCP,PCK@0.2,0.781100,0.781078,0.0028,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_MCP,MPJPE,33.976500,33.977467,0.0028,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_PIP,PCK@0.2,0.840100,0.840117,0.0021,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_PIP,MPJPE,28.281500,28.281851,0.0012,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_DIP,PCK@0.2,0.878600,0.878621,0.0024,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_DIP,MPJPE,24.935700,24.936415,0.0029,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_Tip,PCK@0.2,0.906100,0.906124,0.0026,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Middle_Tip,MPJPE,21.110800,21.110743,0.0003,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_MCP,PCK@0.2,0.729700,0.729740,0.0054,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_MCP,MPJPE,39.019900,39.020222,0.0008,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_PIP,PCK@0.2,0.845300,0.845618,0.0376,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_PIP,MPJPE,27.634100,27.633793,0.0011,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_DIP,PCK@0.2,0.858500,0.858453,0.0055,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_DIP,MPJPE,25.576900,25.576822,0.0003,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_Tip,PCK@0.2,0.883800,0.883755,0.0051,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Ring_Tip,MPJPE,23.908400,23.907633,0.0032,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_MCP,PCK@0.2,0.685400,0.685369,0.0046,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_MCP,MPJPE,44.038700,44.038269,0.0010,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_PIP,PCK@0.2,0.768200,0.768243,0.0057,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_PIP,MPJPE,35.271800,35.270996,0.0023,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_DIP,PCK@0.2,0.763100,0.763110,0.0013,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_DIP,MPJPE,35.811500,35.811005,0.0014,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_Tip,PCK@0.2,0.789500,0.789512,0.0016,PASS
+table_iv_vii_viii_gt_space_FINAL.csv,FT V2-150,Pinky_Tip,MPJPE,31.874200,31.873722,0.0015,PASS
+model_identity_and_results_MASTER.csv,MediaPipe SDK (official),ALL,PCK@0.2,0.596700,0.596696,0.0006,PASS
+model_identity_and_results_MASTER.csv,MediaPipe SDK (official),ALL,AUC,0.552600,0.552628,0.0051,PASS
+model_identity_and_results_MASTER.csv,MediaPipe SDK (official),ALL,MPJPE,100.754000,100.754046,0.0000,PASS
+model_identity_and_results_MASTER.csv,BlazeHandLandmark (zmurez pre-distillation weights),ALL,PCK@0.2,0.626700,0.626679,0.0034,PASS
+model_identity_and_results_MASTER.csv,BlazeHandLandmark (zmurez pre-distillation weights),ALL,AUC,0.589500,0.589484,0.0027,PASS
+model_identity_and_results_MASTER.csv,BlazeHandLandmark (zmurez pre-distillation weights),ALL,MPJPE,78.246000,78.245997,0.0000,PASS
+model_identity_and_results_MASTER.csv,Direct Sup. (ep.25),ALL,PCK@0.2,0.424800,0.424712,0.0206,PASS
+model_identity_and_results_MASTER.csv,Direct Sup. (ep.25),ALL,AUC,0.537700,0.537700,0.0000,PASS
+model_identity_and_results_MASTER.csv,Direct Sup. (ep.25),ALL,MPJPE,59.868000,59.868130,0.0002,PASS
+model_identity_and_results_MASTER.csv,Dist. V2-100,ALL,PCK@0.2,0.819000,0.818988,0.0014,PASS
+model_identity_and_results_MASTER.csv,Dist. V2-100,ALL,AUC,0.767000,0.767037,0.0049,PASS
+model_identity_and_results_MASTER.csv,Dist. V2-100,ALL,MPJPE,30.345300,30.344137,0.0038,PASS
+model_identity_and_results_MASTER.csv,FT V2-150,ALL,PCK@0.2,0.818800,0.818779,0.0026,PASS
+model_identity_and_results_MASTER.csv,FT V2-150,ALL,AUC,0.768600,0.768570,0.0039,PASS
+model_identity_and_results_MASTER.csv,FT V2-150,ALL,MPJPE,30.139100,30.139282,0.0006,PASS
+model_identity_and_results_MASTER.csv,Teacher (HRNetV2-W18 + DARK),ALL,PCK@0.2,0.991800,0.991763,0.0037,PASS
+model_identity_and_results_MASTER.csv,Teacher (HRNetV2-W18 + DARK),ALL,AUC,0.902300,0.902255,0.0050,PASS
+model_identity_and_results_MASTER.csv,Teacher (HRNetV2-W18 + DARK),ALL,MPJPE,2.182700,2.182650,0.0023,PASS
+model_identity_and_results_MASTER.csv,Untrained BlazeHandLandmark (random init.),ALL,PCK@0.2,0.001400,0.001362,2.7114,FAIL
+model_identity_and_results_MASTER.csv,Untrained BlazeHandLandmark (random init.),ALL,AUC,0.013700,0.013670,0.2187,PASS
+model_identity_and_results_MASTER.csv,Untrained BlazeHandLandmark (random init.),ALL,MPJPE,188.875800,188.875824,0.0000,PASS

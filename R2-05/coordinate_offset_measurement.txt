@@ -1,0 +1,22 @@
+Coordinate-space offset measurement (fresh, this session)
+Script: R2-05/measure_coordinate_offset.py
+Dataset: dataset/rhd/annotations/rhd_test.json, full split, N=2727 samples
+Fields compared: gt_instances.keypoints (orig. image space) vs.
+                 gt_instances.transformed_keypoints (256x256 crop space)
+Wall-clock: 18.8s
+
+Per-joint L2 gap, 57267 joint-instances (2727 samples x 21 joints):
+  mean   = 69.71 px
+  median = 63.77 px
+  std    = 121.44 px
+  min    = 0.23 px
+  max    = 13001.51 px
+
+Mean sample-level centroid, orig. space:      [158.8 162.3]
+Mean sample-level centroid, crop (256) space: [126.7 132.1]
+
+Interpretation: this is the per-joint distance directsup_baseline.py's
+training loss was implicitly asked to close between a 256-crop-space
+prediction and an original-image-space target -- i.e., roughly this many
+px of the ~40-60px MPJPE gap reported for that checkpoint could be
+coordinate-space noise rather than a real supervision-signal deficit.

@@ -1,0 +1,40 @@
+\begin{table}[!t]
+\caption{Per-Joint PCK@0.2 --- Trained Models (RHD2D, vs.\ GT)}
+\label{tab:perjoint}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Joint} & \textbf{Direct Sup.} &
+  \textbf{Dist.\ V2-100} & \textbf{FT V2-150} \\
+\midrule
+Wrist       & 0.204 & 0.801 & \textbf{0.802} \\
+Thumb MCP   & 0.386 & 0.677 & \textbf{0.678} \\
+Thumb PIP   & 0.423 & \textbf{0.743} & 0.741 \\
+Thumb DIP   & 0.364 & \textbf{0.755} & 0.754 \\
+Thumb Tip   & 0.284 & 0.801 & \textbf{0.805} \\
+Index MCP   & 0.412 & \textbf{0.666} & 0.665 \\
+Index PIP   & 0.457 & \textbf{0.754} & 0.750 \\
+Index DIP   & 0.402 & \textbf{0.759} & \textbf{0.759} \\
+Index Tip   & 0.326 & 0.750 & \textbf{0.755} \\
+Middle MCP  & 0.582 & \textbf{0.720} & \textbf{0.720} \\
+Middle PIP  & 0.602 & 0.781 & \textbf{0.786} \\
+Middle DIP  & 0.449 & 0.790 & \textbf{0.797} \\
+Middle Tip  & 0.329 & \textbf{0.779} & 0.777 \\
+Ring MCP    & 0.504 & \textbf{0.696} & 0.693 \\
+Ring PIP    & 0.555 & 0.784 & \textbf{0.785} \\
+Ring DIP    & 0.490 & 0.784 & \textbf{0.789} \\
+Ring Tip    & 0.367 & 0.802 & \textbf{0.806} \\
+Pinky MCP   & 0.477 & 0.667 & \textbf{0.673} \\
+Pinky PIP   & 0.470 & 0.707 & \textbf{0.712} \\
+Pinky DIP   & 0.455 & 0.725 & \textbf{0.730} \\
+Pinky Tip   & 0.386 & 0.726 & \textbf{0.732} \\
+\midrule
+\textbf{Mean}         & 0.425 & 0.746 & \textbf{0.748} \\
+Range (max$-$min)     & 0.398 & 0.136 & 0.141 \\
+\bottomrule
+\multicolumn{4}{l}{\scriptsize Bold = best trained model per joint.}
+\end{tabular}
+\end{table}

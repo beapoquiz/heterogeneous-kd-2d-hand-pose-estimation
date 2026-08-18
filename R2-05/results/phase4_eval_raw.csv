@@ -1,0 +1,189 @@
+model,joint,metric,value
+"R2-05 Parity (Direct Sup., ep.100, v2match)",ALL,PCK@0.2,0.969546
+"R2-05 Parity (Direct Sup., ep.100, v2match)",ALL,MPJPE,13.627573
+"R2-05 Parity (Direct Sup., ep.100, v2match)",ALL,AUC,0.894245
+"R2-05 Parity (Direct Sup., ep.100, v2match)",ALL,MSE,454.985504
+"R2-05 Parity (Direct Sup., ep.100, v2match)",ALL,Det.Rate,100.000000
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Wrist,PCK@0.2,0.984598
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Wrist,MPJPE,14.136956
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_MCP,PCK@0.2,0.931793
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_MCP,MPJPE,19.150049
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_PIP,PCK@0.2,0.961129
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_PIP,MPJPE,13.927299
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_DIP,PCK@0.2,0.973231
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_DIP,MPJPE,13.787239
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_Tip,PCK@0.2,0.986065
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Thumb_Tip,MPJPE,11.462699
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_MCP,PCK@0.2,0.949395
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_MCP,MPJPE,17.491594
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_PIP,PCK@0.2,0.975431
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_PIP,MPJPE,13.673835
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_DIP,PCK@0.2,0.984598
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_DIP,MPJPE,10.703449
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_Tip,PCK@0.2,0.984232
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Index_Tip,MPJPE,9.687813
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_MCP,PCK@0.2,0.958196
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_MCP,MPJPE,16.079712
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_PIP,PCK@0.2,0.983132
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_PIP,MPJPE,12.143994
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_DIP,PCK@0.2,0.988265
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_DIP,MPJPE,11.056517
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_Tip,PCK@0.2,0.992299
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Middle_Tip,MPJPE,8.380366
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_MCP,PCK@0.2,0.937660
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_MCP,MPJPE,18.874710
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_PIP,PCK@0.2,0.979098
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_PIP,MPJPE,13.128206
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_DIP,PCK@0.2,0.980565
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_DIP,MPJPE,11.147782
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_Tip,PCK@0.2,0.980931
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Ring_Tip,MPJPE,9.559863
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_MCP,PCK@0.2,0.938761
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_MCP,MPJPE,18.904268
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_PIP,PCK@0.2,0.958196
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_PIP,MPJPE,15.339253
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_DIP,PCK@0.2,0.965897
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_DIP,MPJPE,14.740155
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_Tip,PCK@0.2,0.966997
+"R2-05 Parity (Direct Sup., ep.100, v2match)",Pinky_Tip,MPJPE,12.803271
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",ALL,PCK@0.2,0.969476
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",ALL,MPJPE,13.662959
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",ALL,AUC,0.894131
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",ALL,MSE,456.796936
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",ALL,Det.Rate,100.000000
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Wrist,PCK@0.2,0.984232
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Wrist,MPJPE,14.146141
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_MCP,PCK@0.2,0.929226
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_MCP,MPJPE,19.257574
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_PIP,PCK@0.2,0.960763
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_PIP,MPJPE,13.954192
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_DIP,PCK@0.2,0.973231
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_DIP,MPJPE,13.798470
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_Tip,PCK@0.2,0.986432
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Thumb_Tip,MPJPE,11.509795
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_MCP,PCK@0.2,0.949395
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_MCP,MPJPE,17.508476
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_PIP,PCK@0.2,0.976898
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_PIP,MPJPE,13.680434
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_DIP,PCK@0.2,0.984965
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_DIP,MPJPE,10.735772
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_Tip,PCK@0.2,0.983865
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Index_Tip,MPJPE,9.678841
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_MCP,PCK@0.2,0.958929
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_MCP,MPJPE,16.101194
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_PIP,PCK@0.2,0.982765
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_PIP,MPJPE,12.211988
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_DIP,PCK@0.2,0.988999
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_DIP,MPJPE,11.084734
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_Tip,PCK@0.2,0.992299
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Middle_Tip,MPJPE,8.405640
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_MCP,PCK@0.2,0.937294
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_MCP,MPJPE,18.895449
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_PIP,PCK@0.2,0.978365
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_PIP,MPJPE,13.166072
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_DIP,PCK@0.2,0.980198
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_DIP,MPJPE,11.190846
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_Tip,PCK@0.2,0.981298
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Ring_Tip,MPJPE,9.598372
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_MCP,PCK@0.2,0.937660
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_MCP,MPJPE,19.000265
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_PIP,PCK@0.2,0.960029
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_PIP,MPJPE,15.408787
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_DIP,PCK@0.2,0.965530
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_DIP,MPJPE,14.772879
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_Tip,PCK@0.2,0.966630
+"R2-05 Parity (Direct Sup., best-monitor ep.90)",Pinky_Tip,MPJPE,12.816207
+Dist. V2-100 (epoch-matched control),ALL,PCK@0.2,0.818988
+Dist. V2-100 (epoch-matched control),ALL,MPJPE,30.344137
+Dist. V2-100 (epoch-matched control),ALL,AUC,0.767037
+Dist. V2-100 (epoch-matched control),ALL,MSE,1920.698242
+Dist. V2-100 (epoch-matched control),ALL,Det.Rate,100.000000
+Dist. V2-100 (epoch-matched control),Wrist,PCK@0.2,0.846718
+Dist. V2-100 (epoch-matched control),Wrist,MPJPE,30.238325
+Dist. V2-100 (epoch-matched control),Thumb_MCP,PCK@0.2,0.762010
+Dist. V2-100 (epoch-matched control),Thumb_MCP,MPJPE,36.121899
+Dist. V2-100 (epoch-matched control),Thumb_PIP,PCK@0.2,0.818849
+Dist. V2-100 (epoch-matched control),Thumb_PIP,MPJPE,28.948286
+Dist. V2-100 (epoch-matched control),Thumb_DIP,PCK@0.2,0.836084
+Dist. V2-100 (epoch-matched control),Thumb_DIP,MPJPE,28.095343
+Dist. V2-100 (epoch-matched control),Thumb_Tip,PCK@0.2,0.899157
+Dist. V2-100 (epoch-matched control),Thumb_Tip,MPJPE,23.845381
+Dist. V2-100 (epoch-matched control),Index_MCP,PCK@0.2,0.744774
+Dist. V2-100 (epoch-matched control),Index_MCP,MPJPE,37.307693
+Dist. V2-100 (epoch-matched control),Index_PIP,PCK@0.2,0.805281
+Dist. V2-100 (epoch-matched control),Index_PIP,MPJPE,30.421886
+Dist. V2-100 (epoch-matched control),Index_DIP,PCK@0.2,0.854052
+Dist. V2-100 (epoch-matched control),Index_DIP,MPJPE,26.212143
+Dist. V2-100 (epoch-matched control),Index_Tip,PCK@0.2,0.902090
+Dist. V2-100 (epoch-matched control),Index_Tip,MPJPE,22.370316
+Dist. V2-100 (epoch-matched control),Middle_MCP,PCK@0.2,0.785479
+Dist. V2-100 (epoch-matched control),Middle_MCP,MPJPE,34.130966
+Dist. V2-100 (epoch-matched control),Middle_PIP,PCK@0.2,0.838284
+Dist. V2-100 (epoch-matched control),Middle_PIP,MPJPE,28.556053
+Dist. V2-100 (epoch-matched control),Middle_DIP,PCK@0.2,0.878988
+Dist. V2-100 (epoch-matched control),Middle_DIP,MPJPE,25.098705
+Dist. V2-100 (epoch-matched control),Middle_Tip,PCK@0.2,0.907591
+Dist. V2-100 (epoch-matched control),Middle_Tip,MPJPE,21.345346
+Dist. V2-100 (epoch-matched control),Ring_MCP,PCK@0.2,0.727906
+Dist. V2-100 (epoch-matched control),Ring_MCP,MPJPE,39.243576
+Dist. V2-100 (epoch-matched control),Ring_PIP,PCK@0.2,0.843784
+Dist. V2-100 (epoch-matched control),Ring_PIP,MPJPE,27.992981
+Dist. V2-100 (epoch-matched control),Ring_DIP,PCK@0.2,0.862853
+Dist. V2-100 (epoch-matched control),Ring_DIP,MPJPE,25.614307
+Dist. V2-100 (epoch-matched control),Ring_Tip,PCK@0.2,0.883388
+Dist. V2-100 (epoch-matched control),Ring_Tip,MPJPE,24.119648
+Dist. V2-100 (epoch-matched control),Pinky_MCP,PCK@0.2,0.681335
+Dist. V2-100 (epoch-matched control),Pinky_MCP,MPJPE,44.125408
+Dist. V2-100 (epoch-matched control),Pinky_PIP,PCK@0.2,0.767877
+Dist. V2-100 (epoch-matched control),Pinky_PIP,MPJPE,35.613304
+Dist. V2-100 (epoch-matched control),Pinky_DIP,PCK@0.2,0.762376
+Dist. V2-100 (epoch-matched control),Pinky_DIP,MPJPE,35.744194
+Dist. V2-100 (epoch-matched control),Pinky_Tip,PCK@0.2,0.789879
+Dist. V2-100 (epoch-matched control),Pinky_Tip,MPJPE,32.081131
+"FT V2-150 (headline model, fresh re-score)",ALL,PCK@0.2,0.818779
+"FT V2-150 (headline model, fresh re-score)",ALL,MPJPE,30.139282
+"FT V2-150 (headline model, fresh re-score)",ALL,AUC,0.768570
+"FT V2-150 (headline model, fresh re-score)",ALL,MSE,1919.693848
+"FT V2-150 (headline model, fresh re-score)",ALL,Det.Rate,100.000000
+"FT V2-150 (headline model, fresh re-score)",Wrist,PCK@0.2,0.849652
+"FT V2-150 (headline model, fresh re-score)",Wrist,MPJPE,29.954351
+"FT V2-150 (headline model, fresh re-score)",Thumb_MCP,PCK@0.2,0.765310
+"FT V2-150 (headline model, fresh re-score)",Thumb_MCP,MPJPE,35.479519
+"FT V2-150 (headline model, fresh re-score)",Thumb_PIP,PCK@0.2,0.821049
+"FT V2-150 (headline model, fresh re-score)",Thumb_PIP,MPJPE,28.604130
+"FT V2-150 (headline model, fresh re-score)",Thumb_DIP,PCK@0.2,0.834617
+"FT V2-150 (headline model, fresh re-score)",Thumb_DIP,MPJPE,27.977482
+"FT V2-150 (headline model, fresh re-score)",Thumb_Tip,PCK@0.2,0.896590
+"FT V2-150 (headline model, fresh re-score)",Thumb_Tip,MPJPE,23.669836
+"FT V2-150 (headline model, fresh re-score)",Index_MCP,PCK@0.2,0.746608
+"FT V2-150 (headline model, fresh re-score)",Index_MCP,MPJPE,37.219917
+"FT V2-150 (headline model, fresh re-score)",Index_PIP,PCK@0.2,0.806381
+"FT V2-150 (headline model, fresh re-score)",Index_PIP,MPJPE,30.205837
+"FT V2-150 (headline model, fresh re-score)",Index_DIP,PCK@0.2,0.847451
+"FT V2-150 (headline model, fresh re-score)",Index_DIP,MPJPE,26.055868
+"FT V2-150 (headline model, fresh re-score)",Index_Tip,PCK@0.2,0.896956
+"FT V2-150 (headline model, fresh re-score)",Index_Tip,MPJPE,22.319036
+"FT V2-150 (headline model, fresh re-score)",Middle_MCP,PCK@0.2,0.781078
+"FT V2-150 (headline model, fresh re-score)",Middle_MCP,MPJPE,33.977467
+"FT V2-150 (headline model, fresh re-score)",Middle_PIP,PCK@0.2,0.840117
+"FT V2-150 (headline model, fresh re-score)",Middle_PIP,MPJPE,28.281851
+"FT V2-150 (headline model, fresh re-score)",Middle_DIP,PCK@0.2,0.878621
+"FT V2-150 (headline model, fresh re-score)",Middle_DIP,MPJPE,24.936415
+"FT V2-150 (headline model, fresh re-score)",Middle_Tip,PCK@0.2,0.906124
+"FT V2-150 (headline model, fresh re-score)",Middle_Tip,MPJPE,21.110743
+"FT V2-150 (headline model, fresh re-score)",Ring_MCP,PCK@0.2,0.729740
+"FT V2-150 (headline model, fresh re-score)",Ring_MCP,MPJPE,39.020222
+"FT V2-150 (headline model, fresh re-score)",Ring_PIP,PCK@0.2,0.845618
+"FT V2-150 (headline model, fresh re-score)",Ring_PIP,MPJPE,27.633793
+"FT V2-150 (headline model, fresh re-score)",Ring_DIP,PCK@0.2,0.858453
+"FT V2-150 (headline model, fresh re-score)",Ring_DIP,MPJPE,25.576822
+"FT V2-150 (headline model, fresh re-score)",Ring_Tip,PCK@0.2,0.883755
+"FT V2-150 (headline model, fresh re-score)",Ring_Tip,MPJPE,23.907633
+"FT V2-150 (headline model, fresh re-score)",Pinky_MCP,PCK@0.2,0.685369
+"FT V2-150 (headline model, fresh re-score)",Pinky_MCP,MPJPE,44.038269
+"FT V2-150 (headline model, fresh re-score)",Pinky_PIP,PCK@0.2,0.768243
+"FT V2-150 (headline model, fresh re-score)",Pinky_PIP,MPJPE,35.270996
+"FT V2-150 (headline model, fresh re-score)",Pinky_DIP,PCK@0.2,0.763110
+"FT V2-150 (headline model, fresh re-score)",Pinky_DIP,MPJPE,35.811005
+"FT V2-150 (headline model, fresh re-score)",Pinky_Tip,PCK@0.2,0.789512
+"FT V2-150 (headline model, fresh re-score)",Pinky_Tip,MPJPE,31.873722

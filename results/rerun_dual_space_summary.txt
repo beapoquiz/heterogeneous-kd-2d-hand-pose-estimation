@@ -1,0 +1,16 @@
+rerun_dual_space_eval.py — summary
+Samples: 2727 | Device: cuda | Wall-clock: 684.9s
+Command: python scripts/rerun_dual_space_eval.py
+
+Direct Sup. (ep.25)
+  GT-space               PCK@0.2=0.4248  MPJPE=59.8680px  AUC=0.5377
+  teacher-decoded-space  PCK@0.2=0.3378  MPJPE=72.6268px  AUC=0.4580
+
+Dist. V2-100
+  GT-space               PCK@0.2=0.8190  MPJPE=30.3453px  AUC=0.7670
+  teacher-decoded-space  PCK@0.2=0.7460  MPJPE=37.1806px  AUC=0.7207
+
+FT V2-150
+  GT-space               PCK@0.2=0.8188  MPJPE=30.1391px  AUC=0.7686
+  teacher-decoded-space  PCK@0.2=0.7479  MPJPE=36.8172px  AUC=0.7234
+

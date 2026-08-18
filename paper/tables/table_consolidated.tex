@@ -1,0 +1,28 @@
+\begin{table}[!t]
+\caption{Consolidated Model Comparison}
+\label{tab:consolidated}
+\centering
+\renewcommand{\arraystretch}{1.1}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Criterion} & \textbf{MP SDK} & \textbf{Teacher} & \textbf{Direct} & \textbf{Dist.} & \textbf{FT V2} \\
+                   &                 & \textbf{HRNetV2} & \textbf{Sup.}   & \textbf{V2-100} & \textbf{-150} \\
+\midrule
+Params.         & 1.98M & 9.64M & 2.01M & 2.01M & \textbf{2.01M} \\
+GPU FPS         & ---$^{c}$ & 6.9 & 139 & 139 & \textbf{139} \\
+PCK@0.2$^{a}$   & 0.243 & 0.992$^{b}$ & 0.425 & 0.746 & \textbf{0.748} \\
+AUC$^{a}$       & 0.323 & 0.902$^{b}$ & 0.538 & 0.721 & \textbf{0.723} \\
+MPJPE$^{a}$ (px)& 126.95 & 2.21$^{b}$ & 59.87 & 37.23 & \textbf{36.87} \\
+Det.\ rate      & 69.4\% & 100\% & 99.96\% & 100\% & \textbf{100\%} \\
+RT (GPU)        & Yes$^{c}$ & No  & Yes   & Yes   & \textbf{Yes}   \\
+Open/retrain    & No    & Yes    & Yes   & Yes   & \textbf{Yes}   \\
+KD supervision  & No    & ---    & No    & Yes   & \textbf{Yes}   \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{3pt}
+\parbox{\columnwidth}{\scriptsize $^{b}$Official MMPose benchmark.}\\
+\parbox{\columnwidth}{\scriptsize $^{c}$Mobile GPU 5.3--16.1\,ms~\cite{mediapipe2020}; not comparable to RTX~4050.}
+\end{table}

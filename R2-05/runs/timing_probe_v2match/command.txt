@@ -1,0 +1,1 @@
+python directsup_parity_v2.py --run-name timing_probe_v2match --protocol v2match --max-epochs-probe 5 --max-iters-per-epoch 20

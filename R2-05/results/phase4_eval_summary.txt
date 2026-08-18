@@ -1,0 +1,21 @@
+R2-05 Phase 4 evaluation -- fresh, this session
+Script: R2-05/evaluate_r2_05.py
+Command: python R2-05/evaluate_r2_05.py
+Dataset: dataset/rhd/annotations/rhd_test.json, full split, N=2727
+Protocol: GT-space (gt_instances.transformed_keypoints, pack_transformed=True), fixed 51.2px PCK@0.2 threshold, AUC over linspace(0,128,20)/128
+Wall-clock: 69.8s
+
+R2-05 Parity (Direct Sup., ep.100, v2match)
+  PCK@0.2=0.9695  AUC=0.8942  MPJPE=13.6276px  MSE=454.9855px^2  Det.Rate=100.00%
+
+R2-05 Parity (Direct Sup., best-monitor ep.90)
+  PCK@0.2=0.9695  AUC=0.8941  MPJPE=13.6630px  MSE=456.7969px^2  Det.Rate=100.00%
+
+Dist. V2-100 (epoch-matched control)
+  PCK@0.2=0.8190  AUC=0.7670  MPJPE=30.3441px  MSE=1920.6982px^2  Det.Rate=100.00%
+
+FT V2-150 (headline model, fresh re-score)
+  PCK@0.2=0.8188  AUC=0.7686  MPJPE=30.1393px  MSE=1919.6938px^2  Det.Rate=100.00%
+
+AUC gap, Parity vs Dist. V2-100 (epoch-matched, controlled): -12.72pp
+AUC gap, Parity vs FT V2-150 (headline, NOT epoch-matched): -12.57pp

@@ -19,14 +19,18 @@ Undergraduate thesis project: transferring knowledge from a high-accuracy teache
 
 ### Accuracy on RHD Test Set
 
+Full 2,727-sample RHD2D test set, GT-space, fixed 51.2 px PCK@0.2 threshold (matches `paper/main.tex` Table IV / Table VIII):
+
 | Model | PCK@0.2 (vs GT) | MPJPE | AUC |
 |---|---|---|---|
-| Teacher — HRNetV2-W18 + DARK | **99.2%** | 2.21 px | 0.902 |
-| Student — BlazeHandLandmark (distilled + fine-tuned) | **74.7%** | 37.0 px | 0.722 |
-| Direct Supervision Baseline | 33.8% | 72.7 px | 0.458 |
-| MediaPipe SDK (zmurez weights) | 30.1% | 104.3 px | 0.395 |
+| Teacher — HRNetV2-W18 + DARK | **99.2%** | 2.18 px | 0.902 |
+| Direct Supervision (parity-controlled retrain, ep.100)¹ | **97.0%** | 13.63 px | 0.894 |
+| Student — BlazeHandLandmark (distilled + fine-tuned) | 81.9% | 30.14 px | 0.769 |
+| MediaPipe SDK (official) | 59.7% | 100.75 px | 0.553 |
 
-Full per-joint breakdown and fine-tuned model results are in the `results_*.txt` files.
+¹ Direct supervision, given the identical training recipe/epoch budget used for distillation, outperforms the distilled student on this benchmark — a reversal of this project's original (buggy-coordinate-frame) comparison. This isn't "direct supervision beats distillation" in general: the recipe was tuned for the distillation arm, and RHD2D's synthetic labels remove the label-scarcity problem that normally favors distillation. See `paper/main.tex` §V-C ("Quantitative Results") and `results/README.md` for the full writeup, including the coordinate-space bug that produced the original, incorrect numbers.
+
+Full per-joint breakdowns, intermediate result files, and the full audit trail behind these corrections are in `results/` (see `results/README.md` and `results/model_identity_and_results_MASTER.md`).
 
 ---
 
@@ -198,6 +202,10 @@ mmpose_thesis/
 ├── webcam_demo_finetuned.py            # Live demo (fine-tuned model)
 │
 ├── experiments/                        # Archived trial-and-error scripts
+├── scripts/                             # One-off audit/reconciliation scripts (table generation, dual-space rerun, detection rescoring)
+├── results/                              # Numeric audit trail: corrected result files, per-joint CSVs, provenance docs (see results/README.md)
+├── R2-05/                                 # Parity-controlled Direct Supervision retrain: training run, checkpoints (git-ignored), eval script, per-joint results
+├── paper/                                # Thesis/conference paper source (main.tex, tables, figures)
 │
 ├── .gitignore
 ├── requirements.txt
@@ -208,5 +216,6 @@ mmpose_thesis/
 
 ## Notes
 
-- Model checkpoints (`checkpoints/`), datasets (`dataset/`, `freihand/`), generated figures (`thesis_figures/`), and the MMPose framework directory are excluded from version control via `.gitignore`.
+- Model checkpoints (`checkpoints/`, `R2-05/**/checkpoints/`, `*.pth`), datasets (`dataset/`, `freihand/`), generated figures (`thesis_figures/`), and the MMPose framework directory are excluded from version control via `.gitignore`.
 - All archived experimental scripts are preserved in `experiments/` for reference.
+- `results/README.md` documents a coordinate-space bug found during the paper's revision (several eval scripts read untransformed GT keypoints) and the corrected numbers that followed — read it before trusting any pre-revision number that isn't in the table above.

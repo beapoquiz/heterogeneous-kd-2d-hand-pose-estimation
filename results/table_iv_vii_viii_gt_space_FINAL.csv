@@ -1,0 +1,136 @@
+model,joint,metric,value
+Direct Sup. (ep.25),ALL,PCK@0.2,0.4248
+Direct Sup. (ep.25),ALL,MPJPE,59.8680
+Direct Sup. (ep.25),ALL,AUC,0.5377
+Direct Sup. (ep.25),Wrist,PCK@0.2,0.2035
+Direct Sup. (ep.25),Wrist,MPJPE,82.9633
+Direct Sup. (ep.25),Thumb_MCP,PCK@0.2,0.3858
+Direct Sup. (ep.25),Thumb_MCP,MPJPE,65.4217
+Direct Sup. (ep.25),Thumb_PIP,PCK@0.2,0.4228
+Direct Sup. (ep.25),Thumb_PIP,MPJPE,59.8240
+Direct Sup. (ep.25),Thumb_DIP,PCK@0.2,0.3638
+Direct Sup. (ep.25),Thumb_DIP,MPJPE,63.9831
+Direct Sup. (ep.25),Thumb_Tip,PCK@0.2,0.2838
+Direct Sup. (ep.25),Thumb_Tip,MPJPE,70.2769
+Direct Sup. (ep.25),Index_MCP,PCK@0.2,0.4118
+Direct Sup. (ep.25),Index_MCP,MPJPE,63.2034
+Direct Sup. (ep.25),Index_PIP,PCK@0.2,0.4565
+Direct Sup. (ep.25),Index_PIP,MPJPE,56.7013
+Direct Sup. (ep.25),Index_DIP,PCK@0.2,0.4015
+Direct Sup. (ep.25),Index_DIP,MPJPE,58.8719
+Direct Sup. (ep.25),Index_Tip,PCK@0.2,0.3256
+Direct Sup. (ep.25),Index_Tip,MPJPE,62.7937
+Direct Sup. (ep.25),Middle_MCP,PCK@0.2,0.5816
+Direct Sup. (ep.25),Middle_MCP,MPJPE,50.7887
+Direct Sup. (ep.25),Middle_PIP,PCK@0.2,0.6018
+Direct Sup. (ep.25),Middle_PIP,MPJPE,48.8677
+Direct Sup. (ep.25),Middle_DIP,PCK@0.2,0.4492
+Direct Sup. (ep.25),Middle_DIP,MPJPE,56.6114
+Direct Sup. (ep.25),Middle_Tip,PCK@0.2,0.3289
+Direct Sup. (ep.25),Middle_Tip,MPJPE,61.6838
+Direct Sup. (ep.25),Ring_MCP,PCK@0.2,0.5039
+Direct Sup. (ep.25),Ring_MCP,MPJPE,53.8357
+Direct Sup. (ep.25),Ring_PIP,PCK@0.2,0.5545
+Direct Sup. (ep.25),Ring_PIP,MPJPE,49.9937
+Direct Sup. (ep.25),Ring_DIP,PCK@0.2,0.4899
+Direct Sup. (ep.25),Ring_DIP,MPJPE,55.0628
+Direct Sup. (ep.25),Ring_Tip,PCK@0.2,0.3667
+Direct Sup. (ep.25),Ring_Tip,MPJPE,61.4012
+Direct Sup. (ep.25),Pinky_MCP,PCK@0.2,0.4774
+Direct Sup. (ep.25),Pinky_MCP,MPJPE,55.9723
+Direct Sup. (ep.25),Pinky_PIP,PCK@0.2,0.4697
+Direct Sup. (ep.25),Pinky_PIP,MPJPE,56.3643
+Direct Sup. (ep.25),Pinky_DIP,PCK@0.2,0.4554
+Direct Sup. (ep.25),Pinky_DIP,MPJPE,58.0454
+Direct Sup. (ep.25),Pinky_Tip,PCK@0.2,0.3858
+Direct Sup. (ep.25),Pinky_Tip,MPJPE,64.5610
+Dist. V2-100,ALL,PCK@0.2,0.8190
+Dist. V2-100,ALL,MPJPE,30.3453
+Dist. V2-100,ALL,AUC,0.7670
+Dist. V2-100,Wrist,PCK@0.2,0.8467
+Dist. V2-100,Wrist,MPJPE,30.2385
+Dist. V2-100,Thumb_MCP,PCK@0.2,0.7620
+Dist. V2-100,Thumb_MCP,MPJPE,36.1230
+Dist. V2-100,Thumb_PIP,PCK@0.2,0.8185
+Dist. V2-100,Thumb_PIP,MPJPE,28.9491
+Dist. V2-100,Thumb_DIP,PCK@0.2,0.8361
+Dist. V2-100,Thumb_DIP,MPJPE,28.0955
+Dist. V2-100,Thumb_Tip,PCK@0.2,0.8988
+Dist. V2-100,Thumb_Tip,MPJPE,23.8461
+Dist. V2-100,Index_MCP,PCK@0.2,0.7448
+Dist. V2-100,Index_MCP,MPJPE,37.3095
+Dist. V2-100,Index_PIP,PCK@0.2,0.8053
+Dist. V2-100,Index_PIP,MPJPE,30.4228
+Dist. V2-100,Index_DIP,PCK@0.2,0.8537
+Dist. V2-100,Index_DIP,MPJPE,26.2131
+Dist. V2-100,Index_Tip,PCK@0.2,0.9021
+Dist. V2-100,Index_Tip,MPJPE,22.3707
+Dist. V2-100,Middle_MCP,PCK@0.2,0.7855
+Dist. V2-100,Middle_MCP,MPJPE,34.1327
+Dist. V2-100,Middle_PIP,PCK@0.2,0.8383
+Dist. V2-100,Middle_PIP,MPJPE,28.5575
+Dist. V2-100,Middle_DIP,PCK@0.2,0.8790
+Dist. V2-100,Middle_DIP,MPJPE,25.0995
+Dist. V2-100,Middle_Tip,PCK@0.2,0.9080
+Dist. V2-100,Middle_Tip,MPJPE,21.3462
+Dist. V2-100,Ring_MCP,PCK@0.2,0.7279
+Dist. V2-100,Ring_MCP,MPJPE,39.2453
+Dist. V2-100,Ring_PIP,PCK@0.2,0.8438
+Dist. V2-100,Ring_PIP,MPJPE,27.9943
+Dist. V2-100,Ring_DIP,PCK@0.2,0.8629
+Dist. V2-100,Ring_DIP,MPJPE,25.6154
+Dist. V2-100,Ring_Tip,PCK@0.2,0.8834
+Dist. V2-100,Ring_Tip,MPJPE,24.1204
+Dist. V2-100,Pinky_MCP,PCK@0.2,0.6813
+Dist. V2-100,Pinky_MCP,MPJPE,44.1275
+Dist. V2-100,Pinky_PIP,PCK@0.2,0.7679
+Dist. V2-100,Pinky_PIP,MPJPE,35.6151
+Dist. V2-100,Pinky_DIP,PCK@0.2,0.7624
+Dist. V2-100,Pinky_DIP,MPJPE,35.7462
+Dist. V2-100,Pinky_Tip,PCK@0.2,0.7899
+Dist. V2-100,Pinky_Tip,MPJPE,32.0824
+FT V2-150,ALL,PCK@0.2,0.8188
+FT V2-150,ALL,MPJPE,30.1391
+FT V2-150,ALL,AUC,0.7686
+FT V2-150,Wrist,PCK@0.2,0.8497
+FT V2-150,Wrist,MPJPE,29.9532
+FT V2-150,Thumb_MCP,PCK@0.2,0.7657
+FT V2-150,Thumb_MCP,MPJPE,35.4790
+FT V2-150,Thumb_PIP,PCK@0.2,0.8210
+FT V2-150,Thumb_PIP,MPJPE,28.6039
+FT V2-150,Thumb_DIP,PCK@0.2,0.8346
+FT V2-150,Thumb_DIP,MPJPE,27.9771
+FT V2-150,Thumb_Tip,PCK@0.2,0.8966
+FT V2-150,Thumb_Tip,MPJPE,23.6692
+FT V2-150,Index_MCP,PCK@0.2,0.7466
+FT V2-150,Index_MCP,MPJPE,37.2195
+FT V2-150,Index_PIP,PCK@0.2,0.8064
+FT V2-150,Index_PIP,MPJPE,30.2052
+FT V2-150,Index_DIP,PCK@0.2,0.8475
+FT V2-150,Index_DIP,MPJPE,26.0552
+FT V2-150,Index_Tip,PCK@0.2,0.8973
+FT V2-150,Index_Tip,MPJPE,22.3193
+FT V2-150,Middle_MCP,PCK@0.2,0.7811
+FT V2-150,Middle_MCP,MPJPE,33.9765
+FT V2-150,Middle_PIP,PCK@0.2,0.8401
+FT V2-150,Middle_PIP,MPJPE,28.2815
+FT V2-150,Middle_DIP,PCK@0.2,0.8786
+FT V2-150,Middle_DIP,MPJPE,24.9357
+FT V2-150,Middle_Tip,PCK@0.2,0.9061
+FT V2-150,Middle_Tip,MPJPE,21.1108
+FT V2-150,Ring_MCP,PCK@0.2,0.7297
+FT V2-150,Ring_MCP,MPJPE,39.0199
+FT V2-150,Ring_PIP,PCK@0.2,0.8453
+FT V2-150,Ring_PIP,MPJPE,27.6341
+FT V2-150,Ring_DIP,PCK@0.2,0.8585
+FT V2-150,Ring_DIP,MPJPE,25.5769
+FT V2-150,Ring_Tip,PCK@0.2,0.8838
+FT V2-150,Ring_Tip,MPJPE,23.9084
+FT V2-150,Pinky_MCP,PCK@0.2,0.6854
+FT V2-150,Pinky_MCP,MPJPE,44.0387
+FT V2-150,Pinky_PIP,PCK@0.2,0.7682
+FT V2-150,Pinky_PIP,MPJPE,35.2718
+FT V2-150,Pinky_DIP,PCK@0.2,0.7631
+FT V2-150,Pinky_DIP,MPJPE,35.8115
+FT V2-150,Pinky_Tip,PCK@0.2,0.7895
+FT V2-150,Pinky_Tip,MPJPE,31.8742

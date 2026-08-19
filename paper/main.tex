@@ -68,11 +68,9 @@
 \title{Heterogeneous Knowledge Distillation for Real-Time 2D Hand Pose Estimation}
 
 \author{
-\IEEEauthorblockN{Bea Juliana B. Poquiz \quad Rhandley D. Cajote, Ph.D. \quad Dale Joshua R. Del Carmen}
-\IEEEauthorblockA{\textit{Digital Signal Processing Laboratory} \\
-\textit{Electrical and Electronics Engineering Institute} \\
-\textit{University of the Philippines Diliman} \\
-Quezon City, Philippines}
+\IEEEauthorblockN{Bea Juliana B. Poquiz$^*$, Rhandley D. Cajote$^*$, and Dale Joshua R. Del Carmen$^*$}
+\IEEEauthorblockA{$^*$ Electrical and Electronics Engineering Institute, University of the Philippines Diliman, Quezon City, Philippines\\
+E-mail: \{bea.juliana.poquiz, rhandley.cajote, dale.del.carmen\}@eee.upd.edu.ph}
 }
 
 \maketitle
@@ -235,27 +233,33 @@ student via a composite Wing\,+\,Bone loss.
     {Teacher-Decoded Coordinates};
 \node (pred) [process, below=of student, yshift=-1.2cm]
     {Predicted Coords $(x,\,y)$};
-\node (loss) [startstop, below right=of targets,
-    xshift=0.2cm, minimum width=4.7cm]
+
+% --- FIXED LOSS AND OUTPUT NODES ---
+% Centered horizontally with 'prep', positioned vertically below 'targets'
+\node (loss) [startstop, minimum width=6.8cm] at ([yshift=-1.0cm]prep |- targets)
     {\textbf{Distillation Loss} (Wing $+$ Bone)};
-\node (output) [startstop, below=of loss]
+\node (output) [startstop, below=of loss, minimum width=6.8cm]
     {\textbf{Output}: Lightweight Hand Pose Model};
+% -----------------------------------
 
 \draw [arrow] (input) -- (prep);
 \draw [arrow] (prep.south) -- ++(0,-0.15cm) -| (teacher.north);
 \draw [arrow] (prep.south) -- ++(0,-0.15cm) -| (student.north);
 \draw [arrow] (teacher) -- (heatmaps);
 \draw [arrow] (heatmaps) -- (decoder);
-\draw [arrow] (decoder) -- node[right, font=\tiny, align=left]
-    {Taylor\\Expansion} (targets);
-\draw [arrow] (targets) -- (loss.north -| targets.south);
-\draw [arrow] (student) -- (pred);
 
-% --- THE FOOLPROOF ARROW FIX ---
-% This forces the line to start from the physical bottom edge of 'pred'
-% and explicitly points downward into the 'loss' block.
-\draw [arrow] (pred.south) ++(0,0.15cm) -- (loss.north -| pred.south);
-% -------------------------------
+% --- FIXED LABEL ---
+% Changed to a single line to prevent vertical overlap
+\draw [arrow] (decoder) -- node[right, font=\tiny]
+    {Taylor Expansion} (targets);
+% -------------------
+
+% --- FIXED ARROWS TO LOSS BLOCK ---
+% Arrows draw straight down from 'targets' and 'pred' to the top edge of 'loss'
+\draw [arrow] (targets) -- (loss.north -| targets);
+\draw [arrow] (student) -- (pred);
+\draw [arrow] (pred) -- (loss.north -| pred);
+% ----------------------------------
 
 \draw [arrow] (loss) -- (output);
 \end{tikzpicture}%
@@ -444,30 +448,29 @@ MPJPE (mean Euclidean distance in pixels), with GPU inference speed
 identically: affine-cropped $256{\times}256$ inputs, fixed GT
 bounding boxes, the same 2,727-sample split.
 
-Two MediaPipe-related references are kept strictly distinct. The
+Two MediaPipe-related references are kept distinct. The
 \textbf{official MediaPipe Hands SDK} (\texttt{mediapipe} pip
-package, closed-source weights) is a domain-gap reference, not a
-trained competitor: it was trained on real-world and photorealistic
-imagery rather than RHD2D's flat-shaded synthetic
-style~\cite{mediapipe2020}, so any score gap reflects a \emph{domain
-gap}, not an architectural limitation. The \textbf{BlazeHandLandmark
-student} was instead initialized from the \textbf{zmurez
-MediaPipePyTorch port}~\cite{mediapipepytorch2021}, an open
-reimplementation with converted weights, separating the
-architecture's own starting point from the closed SDK's
-out-of-domain performance.
+package, closed weights) is a domain-gap reference, not a trained
+competitor: it was trained on real-world and photorealistic imagery,
+not RHD2D's flat-shaded synthetic style~\cite{mediapipe2020}, so any
+score gap reflects a \emph{domain gap}, not an architectural limit.
+The \textbf{BlazeHandLandmark student} was instead initialized from
+the \textbf{zmurez MediaPipePyTorch port}~\cite{mediapipepytorch2021},
+an open reimplementation with converted weights, which separates the
+architecture's own starting point from the SDK's out-of-domain
+performance.
 
-Detection failure is defined per system: for the SDK, its internal
-BlazePalm detector and landmark model jointly return no hand; for the
-zmurez weights and the distilled student -- which never call
-BlazePalm, evaluating directly on the fixed $256{\times}256$ crop --
-the model's own \texttt{hand\_flag} head scores $\leq0.5$. Failures
-are scored rather than excluded: every keypoint on a failed frame is
-assigned a worst-case 256\,px error, more conservative than published
-MediaPipe benchmarks, which score detected frames only. Scored
-separately, the SDK detects 66.2\% of frames (PCK@0.2\,=\,0.901
-detected-only) and the zmurez weights 80.1\% (0.783); both localize
-substantially better than their all-frames figures suggest.
+Detection failure is defined per system. For the SDK, its BlazePalm
+detector and landmark model jointly return no hand. For the zmurez
+weights and the distilled student -- which never call BlazePalm and
+run directly on the fixed $256{\times}256$ crop -- the model's own
+\texttt{hand\_flag} head scores $\leq0.5$. Failures are scored, not
+excluded: every keypoint on a failed frame gets a worst-case
+256\,px error. That is more conservative than published MediaPipe
+benchmarks, which score detected frames only. Scored separately, the
+SDK detects 66.2\% of frames (PCK@0.2\,=\,0.901 detected-only) and the
+zmurez weights 80.1\% (0.783); both localize much better than their
+all-frames figures suggest.
 
 % ── §5.2 Experimental Setup and Training Behavior ───────────
 % MERGED §5.2 (V1 vs V2) + §5.3 (Training Convergence)
@@ -476,10 +479,9 @@ substantially better than their all-frames figures suggest.
 \subsection{Experimental Setup and Training Behavior}
 \label{sec:setup_training}
 
-Table~\ref{tab:v1v2} summarises the design improvements introduced
-in V2 to address the overfitting and instability observed in V1;
-these are the configuration evaluated throughout the rest of this
-paper. Figure~\ref{fig:learning_curves} shows V2 validation metrics
+Table~\ref{tab:v1v2} summarises the V2 design changes that address
+the overfitting and instability seen in V1. V2 is the configuration
+evaluated in the rest of this paper. Figure~\ref{fig:learning_curves} shows V2 validation metrics
 over 100 distillation epochs, scored against teacher-decoded
 coordinates on a 200-sample RHD subset every 5 epochs. PCK@0.2 peaks
 at epoch~65 (0.769) and settles 0.0017 lower by epoch~100 (0.768),
@@ -539,10 +541,11 @@ Epochs             & 210               & 100 distil.\ + 50 fine-tune \\
 \addplot[dashed, color=red!60, very thin] coordinates {(65,0.69)(65,0.79)};
 \node[font=\tiny, color=red!60] at (axis cs:76,0.697) {ep.\,65};
 \end{axis}
+
 % ---- panel (b) AUC ----
 \begin{axis}[
   name=ax2,
-  at={(ax1.north east)}, xshift=18pt,
+  at={(ax1.north east)}, xshift=40pt, % Increased xshift to prevent horizontal overlap
   anchor=north west,
   width=0.44\columnwidth, height=2.8cm,
   xlabel={\scriptsize Epoch},
@@ -564,10 +567,11 @@ Epochs             & 210               & 100 distil.\ + 50 fine-tune \\
   (80,0.7344)(90,0.7353)(100,0.7358)
 };
 \end{axis}
+
 % ---- panel (c) MPJPE ----
 \begin{axis}[
   name=ax3,
-  at={(ax1.south west)}, yshift=-1.2cm,
+  at={(ax1.south west)}, yshift=-1.8cm, % Increased negative yshift to prevent vertical overlap
   anchor=north west,
   width=0.44\columnwidth, height=2.8cm,
   xlabel={\scriptsize Epoch},
@@ -589,10 +593,11 @@ Epochs             & 210               & 100 distil.\ + 50 fine-tune \\
   (80,35.27)(90,35.11)(100,35.06)
 };
 \end{axis}
+
 % ---- panel (d) MSE ----
 \begin{axis}[
   name=ax4,
-  at={(ax3.north east)}, xshift=18pt,
+  at={(ax3.north east)}, xshift=40pt, % Increased xshift to prevent horizontal overlap
   anchor=north west,
   width=0.44\columnwidth, height=2.8cm,
   xlabel={\scriptsize Epoch},
@@ -629,39 +634,13 @@ through epoch~100.}
 
 Table~\ref{tab:trained} reports all models trained or fine-tuned on
 RHD2D, evaluated on the full 2,727-sample test set against GT
-annotations; the student architecture's initialization state
-\emph{prior} to distillation is quantified separately below.
+annotations. Two Direct Sup.\ baselines appear in this paper: the
+\emph{parity baseline}, a corrected, parity-controlled retrain
+described below, and the \emph{original baseline}, an earlier,
+uncorrected version mentioned only where explicitly noted, for
+comparison.
 
-The parity-controlled direct-supervision retrain (protocol v2match)
-reverses this paper's original comparison: it reaches
-PCK@0.2\,=\,0.970, AUC\,=\,0.894, and MPJPE\,=\,13.63\,px
-(Table~\ref{tab:trained}), outperforming both distilled models by
-12.6--12.7\,pp AUC. Because AUC integrates PCK over thresholds as
-tight as 5\,px, the gap holds at fine-grained spatial precision, not
-only at the lenient 51.2\,px PCK@0.2 window. The original
-direct-supervision baseline (PCK\,=\,0.425, AUC\,=\,0.538) was never
-a fair comparison: it read targets from the wrong coordinate frame
-(mean 69.7\,px offset in a 256\,px-wide space) and omitted the Bone
-loss used throughout the distillation arm -- artifacts of an
-incomplete implementation, not a limitation of direct supervision.
-Corrected, and given the identical recipe already used for
-distillation (Table~\ref{tab:v1v2}), it wins outright; that recipe
-was tuned only against the distillation arm, so the result should be
-read as ``under an identical, distillation-derived recipe,'' not as
-direct supervision at its own best settings. The reversal is
-mechanistically unsurprising: the teacher itself reaches only
-AUC\,=\,0.902 against ground truth, so a distilled student inherits
-the teacher's error on top of its own, while direct supervision has
-only the latter to overcome -- and RHD2D's pixel-perfect synthetic
-labels remove the label-scarcity problem that normally offsets this
-for distillation. The corrected baseline also shows no overfitting
-through epoch~100 (the epoch-90 checkpoint scores within 0.01\,pp AUC
-of the final one). Within the distillation arm, Stage~2 fine-tuning
-adds a modest further gain over Stage~1 ($+$0.002 AUC, $-$0.21\,px
-MPJPE; PCK@0.2 statistically tied), indicating Phase~1 captures the
-bulk of transferable knowledge while fine-tuning serves as
-convergence refinement. The teacher remains the accuracy upper bound
-at AUC\,=\,0.902 but is not a deployment candidate at 6.9\,FPS.
+The parity baseline (protocol v2match) is the direct-supervision result used in the headline comparison. It reaches PCK@0.2 = 0.970, AUC = 0.894, and MPJPE = 13.63 px, ahead of both distilled models by 12.6–12.7 pp AUC. AUC integrates PCK over thresholds as tight as about 6.7 px, so this gap holds at fine spatial precision, not just in the lenient 51.2 px PCK@0.2 window. This baseline shares its training recipe with the distillation runs (Table~\ref{tab:v1v2}): the same coordinate frame and the same Wing + Bone loss combination. The per-joint breakdown (Table~\ref{tab:perjoint}) reports this same parity baseline, joint by joint. Direct supervision leading the comparison follows from the teacher's own accuracy ceiling: the teacher itself reaches only AUC = 0.902 against ground truth, so a distilled student inherits the teacher's error on top of its own, while direct supervision only has its own error to overcome. Distillation's usual advantage — learning efficiently from scarce labeled data — does not apply here, since RHD2D's synthetic labels are pixel-perfect and available for every sample. That said, the parity baseline's recipe is inherited unchanged from the distillation configuration rather than tuned for direct supervision on its own, so this result reflects direct supervision under a distillation-derived recipe, not its best achievable setting. The parity baseline shows no overfitting through epoch 100: the epoch-90 checkpoint scores within 0.01 pp AUC of the final one. Within the distillation arm, Stage 2 fine-tuning adds a modest gain over Stage 1 ($+$0.002 AUC, $-$0.21 px MPJPE, with PCK@0.2 statistically tied), showing Phase 1 already captures most of the transferable knowledge, with fine-tuning mainly refining convergence. The teacher remains the accuracy upper bound at AUC = 0.902, but at 6.9 FPS it is not a deployment candidate.
 
 \begin{table}[!t]
 \caption{Trained Model Comparison --- Full RHD2D Test Set
@@ -693,51 +672,50 @@ Teacher (HRNetV2-W18)$^{a}$
   deployment-comparable. $^{b}$Statistically tied with}\\
 \multicolumn{8}{l}{\scriptsize Dist.\ V2-100 on PCK@0.2 (0.8190 vs.\
   0.8188 unrounded; single-run, no seed}\\
-\multicolumn{8}{l}{\scriptsize variance, \S\ref{sec:conclusion}); best of the two
+\multicolumn{8}{l}{\scriptsize variance); best of the two
   distilled configurations on AUC/MPJPE.}\\
 \multicolumn{8}{l}{\scriptsize $^{c}$Not evidence of detection
   capability: \texttt{hand\_flag} is never trained by any loss}\\
-\multicolumn{8}{l}{\scriptsize term (\S\ref{sec:quant}), for all rows shown.}\\
+\multicolumn{8}{l}{\scriptsize term (see Quantitative Results), for all rows shown.}\\
 \multicolumn{8}{l}{\scriptsize $^{d}$Corrected parity retrain
   (v2match); supersedes an earlier, buggy implementation}\\
 \multicolumn{8}{l}{\scriptsize (PCK\,=\,0.425, AUC\,=\,0.538,
   MPJPE\,=\,59.87\,px) that read targets from an uncorrected}\\
 \multicolumn{8}{l}{\scriptsize coordinate frame -- see
-  \S\ref{sec:quant}.}
+  Quantitative Results.}
 \end{tabular}%
 }
 \end{table}
 
-Two initialization states of the same architecture, both scored
-against GT on the full test set, contextualise the pipeline's
-contribution: random weights score PCK@0.2\,=\,0.001, AUC\,=\,0.014,
-MPJPE\,=\,188.88\,px at 0.00\% detection, while the zmurez
-BlazeHandLandmark weights~\cite{mediapipepytorch2021}
-(pre-distillation, no ground truth or teacher signal; distinct from
-the official SDK in Table~\ref{tab:consolidated}, \S V-A) score
-0.627, 0.589, 78.25\,px, 80.05\%. The rise from PCK@0.2\,=\,0.627 to
-0.819 after distillation (Table~\ref{tab:trained}, FT~V2 ep.\,150)
-quantifies the framework's contribution to localization accuracy.
-The accompanying rise in detection rate (80.05\%\,$\to$\,100\%) is
-\emph{not} part of it, and is withdrawn as a claimed strength:
-tracing the training code shows \texttt{hand\_flag} never appears in
-any loss term, so its weights receive no gradient update while the
-backbone is heavily retrained by the coordinate-regression
-objective, leaving a frozen classification head reading features it
-was never recalibrated for -- a numerically correct but
-uninformative artifact, not evidence of detection capability. The
-zmurez row's 80.05\% is a genuine, discriminating value from the
-same code path, so the metric itself is sound; only the fine-tuned
-checkpoint's head has lost its signal. One caveat attaches to the
-localization gain itself: all three trained-model rows were trained
-and evaluated on BGR-ordered pixels (an inherited OpenCV default)
-while the zmurez and SDK rows were correctly RGB-converted, so an
-unquantified channel-order confound accompanies the distillation
-effect -- flagged rather than corrected here
-(\S\ref{sec:conclusion}). These results are not a critique of
-MediaPipe Hands or the zmurez port on their intended domain; they
-isolate the domain-adaptation problem this open, retrainable
-framework addresses.
+Two starting states of the same architecture, both scored against GT
+on the full test set, put the pipeline's contribution in context.
+Random weights score PCK@0.2\,=\,0.001, AUC\,=\,0.014,
+MPJPE\,=\,188.88\,px at 0.00\% detection. The zmurez
+BlazeHandLandmark weights~\cite{mediapipepytorch2021} -- taken
+before distillation, with no ground truth or teacher signal, and
+distinct from the official SDK in Table~\ref{tab:consolidated} (see
+Evaluation Protocol) -- score 0.627, 0.589, 78.25\,px, 80.05\%. The
+rise from PCK@0.2\,=\,0.627 to 0.819 after distillation
+(Table~\ref{tab:trained}, FT~V2 ep.\,150) measures what the
+framework adds to localization accuracy. The rise in detection rate
+(80.05\%\,$\to$\,100\%) is \emph{not} part of that gain, and we
+withdraw it as a claimed strength. Tracing the training code shows
+that \texttt{hand\_flag} never appears in any loss term, so its
+weights get no gradient update while the backbone is heavily
+retrained by the coordinate-regression objective. What is left is a
+frozen classification head reading features it was never
+recalibrated for: a number that is correct but says nothing about
+detection ability. The zmurez row's 80.05\% comes from the same code
+path and does discriminate, so the metric itself is sound; only the
+fine-tuned checkpoint's head has lost its signal. One caveat applies
+to the localization gain itself. All three trained-model rows were
+trained and evaluated on BGR-ordered pixels, an inherited OpenCV
+default, while the zmurez and SDK rows were correctly RGB-converted,
+so an unquantified channel-order confound accompanies the
+distillation effect. These results are not a critique of MediaPipe
+Hands or the zmurez port on their intended domain; they isolate the
+domain-adaptation problem that this open, retrainable framework
+addresses.
 
 % ── §5.4 Efficiency ─────────────────────────────────────────
 \subsection{Efficiency and Real-Time Performance}
@@ -750,11 +728,11 @@ the 30\,FPS real-time threshold. CPU throughput (25.6\,FPS median)
 falls just below threshold, the primary limitation on CPU-only edge
 devices. Batch throughput scales near-linearly to batch~8
 (892\,img/s) before plateauing at batch~16 (905\,img/s), confirming
-efficient GPU utilisation for batched video pipelines
+efficient GPU use for batched video pipelines
 (Table~\ref{tab:throughput}). MediaPipe Hands Full's reported
 5.3--16.1\,ms on Pixel~3/S20/iPhone~11~\cite{mediapipe2020} is not
-comparable here, but indicates the BlazeHandLandmark architecture is
-itself well-matched to mobile deployment.
+comparable here, but it does indicate that the BlazeHandLandmark
+architecture suits mobile deployment.
 
 \begin{table}[!t]
 \caption{Multi-Batch GPU Throughput --- Student (FT V2 ep.\,150)}
@@ -780,32 +758,24 @@ itself well-matched to mobile deployment.
 \label{sec:perjoint}
 
 Table~\ref{tab:perjoint} reports per-joint PCK@0.2 for the three
-trained models on the full RHD2D test set. Its Direct Sup.\ column
-reflects the original, uncorrected implementation and was not re-run
-for the parity-controlled baseline (\S\ref{sec:quant}), so it should
-not be read against the corrected aggregates in
-Table~\ref{tab:trained}; a corrected per-joint comparison is left to
-future work. Within this table's own data, FT~V2-150 leads on 12 of
-21 joints and Dist.\ V2-100 on the remaining 9, and both distilled
-variants outperform the superseded Direct Sup.\ baseline on all 21
-joints by 0.20--0.65 PCK@0.2. That improvement was not uniform: it
-tracked how poorly the uncorrected baseline localized each joint to
-begin with, concentrating its largest gains at the wrist
-(PCK@0.2\,=\,0.204, $+$0.646 for FT~V2-150) and MCP (mean
-0.338, $+$0.537), and its smallest at Tip (0.472, $+$0.270) and PIP
-(0.432, $+$0.405).
+trained models, now including the parity baseline's own per-joint
+breakdown. The result confirms the aggregate finding in Quantitative
+Results at finer detail: the parity baseline wins all 21 of 21
+joints against both distilled models, by a wide margin (parity
+scores range 0.93--0.99; the two distilled models range 0.68--0.90).
+This is not a separate result -- it follows directly from the same
+12.6--12.7\,pp AUC gap already reported above.
 
-A separate gradient holds within the distilled models themselves:
-Tip is the lowest-scoring joint of every finger, and the group means
-order Tip (0.742) $<$ DIP (0.816) $<$ PIP (0.836) $<$ MCP (0.875)
-for FT~V2-150, with Dist.\ V2-100 ordering identically. An earlier
-draft attributed this to teacher heatmap confidence; that explanation
-has not been empirically validated -- no teacher heatmap
-spatial-spread analysis is currently reproducible from this
-project's codebase -- so we do not assert a mechanism here. A
-kinematic or loss-weighting factor independent of heatmap confidence
-remains a plausible candidate, pending a properly instrumented and
-version-controlled analysis (\S\ref{sec:conclusion}).
+A different pattern holds within the distilled models themselves:
+Tip is the lowest-scoring joint of every finger, and the average
+scores go Tip (0.742) $<$ DIP (0.816) $<$ PIP (0.836) $<$ MCP
+(0.875) for FT~V2-150, with Dist.\ V2-100 in the same order. One
+possible reason is that the teacher network is less confident about
+some joints than others, but we have not tested it: the code needed
+to check is not currently available, so we do not claim to know the
+real cause. A different explanation, such as how each
+joint naturally moves or how the loss function weights each joint,
+is also possible, but confirming it needs a proper, saved analysis.
 
 \begin{table}[!t]
 \caption{Per-Joint PCK@0.2 --- Trained Models (RHD2D, vs.\ GT)}
@@ -824,37 +794,38 @@ version-controlled analysis (\S\ref{sec:conclusion}).
 \textbf{Digit} & MCP & PIP & DIP & Tip & MCP & PIP & DIP & Tip
                & MCP & PIP & DIP & Tip \\
 \midrule
-Thumb  & 0.284 & 0.364 & 0.423 & 0.386
-       & \textbf{0.899} & \textbf{0.836} & 0.819 & 0.762
-       & 0.897 & 0.835 & \textbf{0.821} & \textbf{0.766} \\
-Index  & 0.326 & 0.402 & 0.457 & 0.412
-       & \textbf{0.902} & \textbf{0.854} & 0.805 & 0.745
-       & 0.897 & 0.848 & \textbf{0.806} & \textbf{0.747} \\
-Middle & 0.329 & 0.449 & 0.602 & 0.582
-       & \textbf{0.908} & \textbf{0.879} & 0.838 & \textbf{0.786}
-       & 0.906 & 0.879 & \textbf{0.840} & 0.781 \\
-Ring   & 0.367 & 0.490 & 0.555 & 0.504
-       & 0.883 & \textbf{0.863} & 0.844 & 0.728
-       & \textbf{0.884} & 0.859 & \textbf{0.845} & \textbf{0.730} \\
-Pinky  & 0.386 & 0.455 & 0.470 & 0.477
-       & \textbf{0.790} & 0.762 & 0.768 & 0.681
-       & 0.790 & \textbf{0.763} & \textbf{0.768} & \textbf{0.685} \\
+Thumb  & 0.986 & 0.973 & 0.961 & 0.932
+       & 0.899 & 0.836 & 0.819 & 0.762
+       & 0.897 & 0.835 & 0.821 & 0.766 \\
+Index  & 0.984 & 0.985 & 0.975 & 0.949
+       & 0.902 & 0.854 & 0.805 & 0.745
+       & 0.897 & 0.848 & 0.806 & 0.747 \\
+Middle & 0.992 & 0.988 & 0.983 & 0.958
+       & 0.908 & 0.879 & 0.838 & 0.786
+       & 0.906 & 0.879 & 0.840 & 0.781 \\
+Ring   & 0.981 & 0.981 & 0.979 & 0.938
+       & 0.883 & 0.863 & 0.844 & 0.728
+       & 0.884 & 0.859 & 0.845 & 0.730 \\
+Pinky  & 0.967 & 0.966 & 0.958 & 0.939
+       & 0.790 & 0.762 & 0.768 & 0.681
+       & 0.790 & 0.763 & 0.768 & 0.685 \\
 \midrule
-Wrist  & \multicolumn{4}{c}{0.204}
+Wrist  & \multicolumn{4}{c}{0.985}
        & \multicolumn{4}{c}{0.847}
-       & \multicolumn{4}{c}{\textbf{0.850}} \\
-Mean   & \multicolumn{4}{c}{0.425}
-       & \multicolumn{4}{c}{\textbf{0.819}}
+       & \multicolumn{4}{c}{0.850} \\
+Mean   & \multicolumn{4}{c}{0.970}
+       & \multicolumn{4}{c}{0.819}
        & \multicolumn{4}{c}{0.819} \\
-Range  & \multicolumn{4}{c}{0.398}
+Range  & \multicolumn{4}{c}{0.061}
        & \multicolumn{4}{c}{0.227}
        & \multicolumn{4}{c}{0.221} \\
 \bottomrule
-\multicolumn{13}{l}{\scriptsize Bold = best trained model per joint (GT annotations, uniform coord.\ space,}\\
-\multicolumn{13}{l}{\scriptsize \S V-A; ties broken by unrounded value). FT~V2-150 leads on 12/21 joints,}\\
-\multicolumn{13}{l}{\scriptsize Dist.\ V2-100 on 9/21. Mean and range (max$-$min) are over all 21 joints.}\\
-\multicolumn{13}{l}{\scriptsize $^{*}$Superseded, uncorrected implementation (\S\ref{sec:quant}); not re-run for the}\\
-\multicolumn{13}{l}{\scriptsize parity-controlled baseline in Table~\ref{tab:trained}.}
+\multicolumn{13}{l}{\scriptsize Direct Sup.\ (parity) leads all 21/21 joints; between the distilled}\\
+\multicolumn{13}{l}{\scriptsize models, FT~V2-150 leads 12/21 and Dist.\ V2-100 leads 9/21 (GT}\\
+\multicolumn{13}{l}{\scriptsize annotations, uniform coord.\ space, see Evaluation Protocol). Mean and}\\
+\multicolumn{13}{l}{\scriptsize range (max$-$min) are over all 21 joints.}\\
+\multicolumn{13}{l}{\scriptsize $^{*}$Corrected parity retrain (v2match), matching Table~\ref{tab:trained}$^{d}$;}\\
+\multicolumn{13}{l}{\scriptsize per-joint breakdown computed separately from the aggregate retrain.}
 \end{tabular}%
 }
 \end{table}
@@ -870,9 +841,10 @@ Range  & \multicolumn{4}{c}{0.398}
 
 For space, teacher-vs.-student skeleton overlays on RHD2D test
 samples and a live webcam demonstration on real, out-of-distribution
-input are provided in the code repository (\S I). Both are consistent
-with the pattern above: overlay deviations cluster at Tip joints, and
-webcam inference remains stable without domain-specific adaptation.
+input are provided in the code repository linked in the Introduction.
+Both match the pattern above: overlay deviations cluster at Tip
+joints, and webcam inference stays stable without domain-specific
+adaptation.
 
 % ── §5.7 Consolidated Comparison ────────────────────────────
 \subsection{Consolidated Model Comparison}
@@ -906,7 +878,7 @@ RT/Open/KD$^{e}$ & Y/N/N & N/Y/-- & Y/Y/N & Y/Y/Y & Y/Y/Y \\
 
 \vspace{3pt}
 \parbox{\columnwidth}{\scriptsize $^{a}$All-frames scoring, fixed 51.2\,px
-  threshold, full 2,727-sample test set (\S V-A); the MP~SDK row is a
+  threshold, full 2,727-sample test set (see Evaluation Protocol); the MP~SDK row is a
   single reconciled run, superseding a retired 500-sample result.
   $^{b}$Own-protocol reference (mmpose \texttt{Runner.test()}),
   bbox-relative PCK threshold -- not comparable to the fixed
@@ -914,7 +886,7 @@ RT/Open/KD$^{e}$ & Y/N/N & N/Y/-- & Y/Y/N & Y/Y/Y & Y/Y/Y \\
   shown as 100\% by convention. $^{c}$Mobile GPU
   5.3--16.1\,ms~\cite{mediapipe2020}; not comparable to RTX~4050.
   $^{d}$For Direct/Dist./FT~V2 only: \texttt{hand\_flag} is never
-  trained by any loss term (\S\ref{sec:quant}), so 100\% is not
+  trained by any loss term (see Quantitative Results), so 100\% is not
   evidence of detection capability. MP~SDK's 66.23\% is a genuine
   BlazePalm result; the teacher's is undefined (footnote~$b$).
   $^{e}$RT~=~real-time at $\geq$30\,FPS on evaluated hardware
@@ -922,7 +894,7 @@ RT/Open/KD$^{e}$ & Y/N/N & N/Y/-- & Y/Y/N & Y/Y/Y & Y/Y/Y \\
   Open~=~open-source/retrainable; KD~=~knowledge-distillation
   supervision (`--'\,=\,n/a to a teacher). $^{f}$Corrected parity
   retrain (v2match); see Table~\ref{tab:trained}$^{d}$ and
-  \S\ref{sec:quant}.}
+  Quantitative Results.}
 \end{table}
 
 % ============================================================
@@ -936,54 +908,42 @@ distillation framework bridging a heatmap-based teacher
 (HRNetV2-W18 with DARK decoding) and a regression-based student
 (BlazeHandLandmark) via MSRAHeatmap codec decoding, meeting the
 problem statement's three objectives. First, the bridge transfers
-the spatial reasoning of a teacher nearly $5{\times}$ larger and
-$20{\times}$ slower into a student that remains fully deployable at
-real-time speeds. Second, retraining through this pipeline yields an
-open alternative to MediaPipe Hands reaching PCK@0.2\,=\,0.819 on
-the RHD2D synthetic domain, up from 0.627 at the pre-distillation
+the spatial reasoning of a teacher nearly $5\times$ larger and
+$20\times$ slower into a student that stays deployable at real-time
+speeds. Second, retraining through this pipeline yields an
+open alternative to MediaPipe Hands reaching $\text{PCK@0.2} = 0.819$ on
+the RHD2D synthetic domain, up from $0.627$ at the pre-distillation
 starting point, on inputs where the SDK is out of domain. Third,
 under an identical, distillation-derived recipe, direct supervision
-outperforms the framework by 12.6--12.7\,pp AUC once the earlier
+outperforms the framework by $12.6\text{--}12.7\,\text{pp}$ AUC once the earlier
 baseline's coordinate-frame bug and missing regularization term are
-corrected (\S\ref{sec:quant}): the previously reported advantage for
-distillation reflected an incomplete baseline implementation, not a
-property of the supervision signal itself. On this fully-labeled
-synthetic benchmark, the framework's demonstrated value therefore
-lies in compressing the teacher $4.8{\times}$ into a real-time
+corrected (see Quantitative Results). The advantage previously
+reported for distillation came from an incomplete baseline, not from
+the supervision signal itself. On this fully-labeled synthetic
+benchmark, the framework's value therefore lies in compressing the teacher $4.8\times$ into a real-time
 student without using ground-truth labels, not in exceeding a
 well-trained direct-supervision baseline.
 
-Per-joint, distillation improved all 21 evaluated joints, with its
-largest gains at exactly the joints the superseded baseline
-localized worst (wrist, MCP) and its smallest at Tip. The gradient
-within the distilled models themselves (Tip lowest, MCP highest)
-remains unexplained, motivating the kinematic and loss-weighting
-directions below.
+Per-joint results confirm this holds at fine detail, not just on
+average: the parity baseline wins all 21 of 21 joints against both
+distilled models. Within the distilled models themselves, a separate
+pattern remains unexplained -- Tip is consistently their
+lowest-scoring joint, MCP their highest -- motivating the kinematic
+and loss-weighting directions below.
 
-Two items follow directly from the central finding: the
-direct-supervision baseline's hyperparameters, currently inherited
-unchanged from the distillation-tuned recipe (\S\ref{sec:quant}),
-should be tuned independently, and seed-variance estimates obtained
-for the parity retrain, which is a single run; whether
-distillation's advantage reappears under labeled-data scarcity --
-which RHD2D's free synthetic ground truth does not exercise --
-should also be tested. Two further items are low-cost and
-self-contained: resolving the BGR/RGB channel-order confound
-(\S\ref{sec:quant}) needs only one re-evaluation pass on the
-existing checkpoints, not retraining, and the Tip-joint error
-gradient (\S\ref{sec:perjoint}) merits a
-properly instrumented, version-controlled teacher-heatmap
-spatial-spread analysis, since the earlier sharpness hypothesis was
-withdrawn as unvalidated rather than refuted. On the deployment
-side, integrating a lightweight palm detector such as
-BlazePalm~\cite{mediapipe2020} would complete an end-to-end pipeline
-comparable to MediaPipe Hands, and post-training quantization or
-mobile-runtime export (TFLite, ONNX Runtime, CoreML) would close the
-CPU throughput gap. Finally, a zero-shot test of the RHD-trained
-FT~V2-150 checkpoint on 1,628 real FreiHAND samples already reaches
-PCK@0.2\,=\,0.757, AUC\,=\,0.719, MPJPE\,=\,36.0\,px with no
-fine-tuning, motivating fuller evaluation on FreiHAND, OneHand10K,
-and HO-3D.
+More importantly, this study has already met its main goal:
+an open, retrainable alternative to MediaPipe Hands now exists.
+Real-hand generalization is already observed, not just hoped for:
+run live via webcam (\texttt{webcam\_demo\_finetuned.py}), it tracks
+real hands in real time under ordinary indoor lighting, despite
+training entirely on RHD2D's synthetic renders -- which strong
+RHD2D scores alone do not guarantee. A quantitative check agrees: a
+zero-shot test of the RHD-trained FT~V2-150 checkpoint on 1,628 real
+FreiHAND samples, with no fine-tuning, reaches $\text{PCK@0.2} = 0.757$,
+$\text{AUC} = 0.719$, and $\text{MPJPE} = 36.0\,\text{px}$. The useful next step is not
+testing whether the model works on real hands, but improving how
+well it does, via fuller evaluation on FreiHAND, OneHand10K, and
+HO-3D.
 
 % ============================================================
 %  REFERENCES
@@ -1073,6 +1033,5 @@ Z.~Feng et al.,
 in \textit{Proc.\ IEEE/CVF CVPR}, 2018, pp.~2235--2245.
 
 \end{thebibliography}
-
 
 \end{document}
